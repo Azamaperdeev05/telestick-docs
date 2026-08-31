@@ -119,10 +119,10 @@
             --ios-bg: #f2f2f7;
             --ios-card: rgba(255, 255, 255, 0.85);
             --ios-card-solid: #ffffff;
-            --ios-blue: #0066cc;
-            --ios-green: #28a745;
+            --ios-blue: #005bb5;
+            --ios-green: #198754;
             --ios-text: #1c1c1e;
-            --ios-text-secondary: #59595e;
+            --ios-text-secondary: #48484a;
             --ios-border: rgba(60, 60, 67, 0.12);
             --ios-fill: rgba(120, 120, 128, 0.08);
             --ios-shadow: 0 8px 32px rgba(0, 0, 0, 0.04);
@@ -136,10 +136,10 @@
                 --ios-bg: #000000;
                 --ios-card: rgba(28, 28, 30, 0.85);
                 --ios-card-solid: #1c1c1e;
-                --ios-blue: #409cff;
+                --ios-blue: #58a6ff;
                 --ios-green: #30d158;
                 --ios-text: #ffffff;
-                --ios-text-secondary: #aeaeb2;
+                --ios-text-secondary: #c7c7cc;
                 --ios-border: rgba(255, 255, 255, 0.12);
                 --ios-fill: rgba(255, 255, 255, 0.1);
                 --ios-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
@@ -164,17 +164,14 @@
         .hero { padding: 50px 20px 30px; text-align: center; max-width: 860px; margin: 0 auto; }
         .app-icon-hero { width: 92px; height: 92px; border-radius: 22px; box-shadow: 0 12px 36px rgba(0,122,255,0.25); margin-bottom: 20px; }
         
-        .pill-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(0, 122, 255, 0.1); color: var(--ios-blue); font-size: 13px; font-weight: 600; padding: 5px 14px; border-radius: 20px; margin-bottom: 16px; }
+        .pill-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(0, 102, 204, 0.1); color: var(--ios-blue); font-size: 13px; font-weight: 600; padding: 6px 16px; border-radius: 20px; margin-bottom: 16px; }
         .hero h1 { font-size: clamp(32px, 5.5vw, 52px); font-weight: 800; letter-spacing: -1px; line-height: 1.15; margin-bottom: 16px; }
         .hero p.lead { font-size: clamp(16px, 2.2vw, 20px); color: var(--ios-text-secondary); max-width: 640px; margin: 0 auto 30px; font-weight: 400; line-height: 1.45; }
 
         /* Store CTA Group */
-        .cta-container { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 12px; margin-bottom: 40px; }
-        
-        .btn-ios-primary { display: inline-flex; align-items: center; gap: 8px; background: var(--ios-blue); color: white; padding: 14px 24px; border-radius: var(--radius-md); font-size: 15px; font-weight: 650; text-decoration: none; box-shadow: 0 6px 20px rgba(0,122,255,0.3); transition: all 0.2s; }
-        .btn-ios-primary:hover { opacity: 0.92; transform: translateY(-1px); }
+        .cta-container { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 14px; margin-bottom: 40px; }
 
-        .store-badge-card { display: inline-flex; align-items: center; gap: 10px; background: var(--ios-card-solid); color: var(--ios-text); padding: 12px 20px; border-radius: var(--radius-md); font-size: 14px; font-weight: 600; border: 0.5px solid var(--ios-border); box-shadow: var(--ios-shadow); cursor: default; text-align: left; }
+        .store-badge-card { display: inline-flex; align-items: center; gap: 10px; background: var(--ios-card-solid); color: var(--ios-text); padding: 14px 22px; border-radius: var(--radius-md); font-size: 14px; font-weight: 600; border: 0.5px solid var(--ios-border); box-shadow: var(--ios-shadow); cursor: default; text-align: left; }
         .store-badge-card small { display: block; font-size: 10px; color: var(--ios-blue); font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
 
         /* Minimalist Phone Showcase */
@@ -195,7 +192,7 @@
         .ios-sticker-item:hover { transform: scale(1.1); }
         .ios-sticker-item::after { content: '60 FPS'; position: absolute; bottom: 2px; right: 2px; font-size: 5px; font-weight: 800; background: var(--ios-blue); color: white; padding: 1px 3px; border-radius: 2px; }
 
-        .btn-wa-action { background: var(--ios-green); color: white; border: none; padding: 12px; border-radius: var(--radius-sm); font-size: 13px; font-weight: 700; width: 100%; display: flex; align-items: center; justify-content: center; gap: 6px; cursor: pointer; box-shadow: 0 4px 14px rgba(52,199,89,0.3); }
+        .btn-wa-action { background: var(--ios-green); color: white; border: none; padding: 14px; border-radius: var(--radius-sm); font-size: 13px; font-weight: 700; width: 100%; display: flex; align-items: center; justify-content: center; gap: 6px; cursor: pointer; box-shadow: 0 4px 14px rgba(25,135,84,0.3); }
 
         /* Feature Cards */
         .features-container { max-width: 980px; margin: 0 auto 70px; padding: 0 20px; }
@@ -215,12 +212,12 @@
         /* CEO Card */
         .ceo-wrap { max-width: 780px; margin: 0 auto 70px; padding: 0 20px; }
         .ios-ceo-card { background: var(--ios-card-solid); border-radius: var(--radius-lg); padding: 28px; border: 0.5px solid var(--ios-border); box-shadow: var(--ios-shadow); display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
-        .ceo-avatar { width: 56px; height: 56px; border-radius: 28px; background: linear-gradient(135deg, #007aff, #5856d6); display: flex; align-items: center; justify-content: center; color: white; font-weight: 800; font-size: 20px; flex-shrink: 0; }
+        .ceo-avatar { width: 56px; height: 56px; border-radius: 28px; background: linear-gradient(135deg, #005bb5, #5856d6); display: flex; align-items: center; justify-content: center; color: white; font-weight: 800; font-size: 20px; flex-shrink: 0; }
 
         /* Footer */
         footer { border-top: 0.5px solid var(--ios-border); padding: 40px 20px 30px; text-align: center; font-size: 13px; color: var(--ios-text-secondary); }
-        .footer-links { display: flex; justify-content: center; gap: 18px; margin-bottom: 12px; }
-        .footer-links a { color: var(--ios-blue); text-decoration: none; font-weight: 500; }
+        .footer-links { display: flex; justify-content: center; align-items: center; gap: 12px; margin-bottom: 12px; }
+        .footer-links a { color: var(--ios-blue); text-decoration: none; font-weight: 600; padding: 10px 14px; display: inline-block; min-height: 44px; line-height: 24px; }
     </style>
 </head>
 <body>
