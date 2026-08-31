@@ -154,7 +154,7 @@
         /* Segmented Control */
         .segmented-control { display: flex; background: var(--ios-fill); padding: 2px; border-radius: var(--radius-sm); max-width: 100%; overflow-x: auto; scrollbar-width: none; }
         .segmented-control::-webkit-scrollbar { display: none; }
-        .seg-btn { background: none; border: none; padding: 5px 10px; font-size: 12px; font-weight: 600; color: var(--ios-text-secondary); border-radius: 8px; cursor: pointer; transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1); white-space: nowrap; }
+        .seg-btn { background: none; border: none; padding: 6px 12px; min-height: 38px; font-size: 12px; font-weight: 600; color: var(--ios-text-secondary); border-radius: 8px; cursor: pointer; transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1); white-space: nowrap; }
         .seg-btn.active { background: var(--ios-card-solid); color: var(--ios-text); box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
 
         /* Hero */
@@ -226,25 +226,25 @@
     <header>
         <div class="nav-inner">
             <a href="#" class="nav-brand">
-                <img src="app_icon.png" alt="TeleStick Icon">
+                <img src="app_icon_128.png" width="32" height="32" alt="TeleStick Icon" loading="eager">
                 <span>TeleStick</span>
             </a>
 
             <div class="segmented-control">
-                <button class="seg-btn active" onclick="setLanguage('kk')">🇰🇿 ҚАЗ</button>
-                <button class="seg-btn" onclick="setLanguage('ru')">🇷🇺 РУС</button>
-                <button class="seg-btn" onclick="setLanguage('en')">🇺🇸 ENG</button>
-                <button class="seg-btn" onclick="setLanguage('es')">🇪🇸 ESP</button>
-                <button class="seg-btn" onclick="setLanguage('pt')">🇧🇷 POR</button>
-                <button class="seg-btn" onclick="setLanguage('id')">🇮🇩 IND</button>
-                <button class="seg-btn" onclick="setLanguage('tr')">🇹🇷 TUR</button>
+                <button class="seg-btn active" onclick="setLanguage('kk')" aria-label="Қазақ тілі">🇰🇿 ҚАЗ</button>
+                <button class="seg-btn" onclick="setLanguage('ru')" aria-label="Русский язык">🇷🇺 РУС</button>
+                <button class="seg-btn" onclick="setLanguage('en')" aria-label="English">🇺🇸 ENG</button>
+                <button class="seg-btn" onclick="setLanguage('es')" aria-label="Español">🇪🇸 ESP</button>
+                <button class="seg-btn" onclick="setLanguage('pt')" aria-label="Português">🇧🇷 POR</button>
+                <button class="seg-btn" onclick="setLanguage('id')" aria-label="Bahasa Indonesia">🇮🇩 IND</button>
+                <button class="seg-btn" onclick="setLanguage('tr')" aria-label="Türkçe">🇹🇷 TUR</button>
             </div>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <img src="app_icon.png" alt="TeleStick App Icon" class="app-icon-hero">
+        <img src="app_icon_256.png" width="92" height="92" alt="TeleStick App Icon" class="app-icon-hero" loading="eager">
         <br>
         <div class="pill-badge">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
@@ -282,7 +282,7 @@
             <div class="iphone-screen">
                 <div class="ios-topbar">
                     <span class="ios-topbar-title">
-                        <img src="app_icon.png" width="18" height="18" style="border-radius:4px;">
+                        <img src="app_icon_128.png" width="18" height="18" alt="TeleStick Mini Logo" style="border-radius:4px;" loading="lazy">
                         TeleStick
                     </span>
                     <span style="font-size:10px; background:var(--ios-blue); color:white; padding:1px 5px; border-radius:4px; font-weight:700;">PRO</span>
