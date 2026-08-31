@@ -3,52 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TeleStick — Telegram стикерлерін WhatsApp-қа көшіру | 60 FPS Video & Animated Stickers</title>
+    <title>TeleStick — Telegram to WhatsApp 60 FPS Sticker Hub (7 Languages)</title>
     
     <!-- 🔍 SEO Meta Tags -->
-    <meta name="description" content="TeleStick — Telegram-нан WhatsApp пен WhatsApp Business-ке кез келген стикерлерді (60 FPS WebM видео, .tgs Lottie және статикалық) сапасын жоғалтпай 3 секундта тегін көшіретін №1 қосымша. 100% қауіпсіз, жергілікті өңдеу.">
-    <meta name="keywords" content="TeleStick, Telegram to WhatsApp stickers, стикерлерді ватсапқа қосу, стикеры из телеграм в ватсап, видео стикерлер, 60 FPS animated stickers, tgs converter, webm to whatsapp, azamat perdeev">
+    <meta name="description" content="TeleStick — 60 FPS Video & Animated Telegram Stickers to WhatsApp Converter. 100% Free, Local & Secure.">
+    <meta name="keywords" content="TeleStick, Telegram to WhatsApp, stickers, стикеры, стикерлер, pegatinas, figurinhas, stiker, çıkartmalar, azamat perdeev">
     <meta name="author" content="Azamat Perdeev (CEO & Founder)">
-    <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://azamaperdeev05.github.io/telestick-docs/">
 
-    <!-- 📍 GEO Meta Tags -->
-    <meta name="geo.region" content="KZ-ALA">
-    <meta name="geo.placename" content="Almaty, Kazakhstan">
-    <meta name="geo.position" content="43.238949;76.889709">
-    <meta name="ICBM" content="43.238949, 76.889709">
-
-    <!-- 📱 Open Graph & Twitter -->
+    <!-- 📱 Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://azamaperdeev05.github.io/telestick-docs/">
-    <meta property="og:title" content="TeleStick — Telegram стикерлерін WhatsApp-қа 1 басылыммен қосу 🚀">
-    <meta property="og:description" content="60 FPS Видео және Анимациялық стикерлерді WhatsApp-қа тегін қосыңыз! Автоматты бөлімдерге бөлу және 100% қауіпсіздік.">
+    <meta property="og:title" content="TeleStick — Telegram to WhatsApp Stickers in 1 Tap 🚀">
+    <meta property="og:description" content="60 FPS Video & Animated Stickers to WhatsApp for Free!">
     <meta property="og:image" content="https://azamaperdeev05.github.io/telestick-docs/app_icon.png">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="TeleStick — 60 FPS Telegram to WhatsApp Sticker Hub">
-    <meta name="twitter:image" content="https://azamaperdeev05.github.io/telestick-docs/app_icon.png">
 
     <link rel="icon" type="image/png" href="app_icon.png">
     <meta name="theme-color" content="#007aff">
-
-    <!-- 📊 Structured Data (JSON-LD) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "SoftwareApplication",
-          "name": "TeleStick",
-          "operatingSystem": "Android, iOS, Web",
-          "applicationCategory": "UtilitiesApplication",
-          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-          "description": "Convert Telegram animated and 60 FPS video stickers to WhatsApp instantly with multi-part splitting.",
-          "author": { "@type": "Person", "name": "Azamat Perdeev", "jobTitle": "CEO & Lead Architect" },
-          "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "ratingCount": "128" }
-        }
-      ]
-    }
-    </script>
 
     <style>
         :root {
@@ -67,100 +38,87 @@
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, sans-serif; background-color: var(--dark-bg); color: var(--text-main); line-height: 1.6; overflow-x: hidden; }
 
-        /* Ambient Glow Backgrounds */
         .ambient-glow-1 { position: fixed; top: -150px; left: 20%; width: 500px; height: 500px; background: radial-gradient(circle, rgba(0,122,255,0.25) 0%, rgba(0,0,0,0) 70%); filter: blur(60px); z-index: -1; pointer-events: none; }
         .ambient-glow-2 { position: fixed; top: 40%; right: 10%; width: 550px; height: 550px; background: radial-gradient(circle, rgba(37,211,102,0.18) 0%, rgba(0,0,0,0) 70%); filter: blur(70px); z-index: -1; pointer-events: none; }
 
         /* Navigation */
-        header { position: sticky; top: 0; z-index: 1000; backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); background: rgba(11, 15, 25, 0.8); border-bottom: 1px solid var(--card-border); }
-        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; }
-        .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: white; font-weight: 800; font-size: 22px; }
-        .brand img { width: 40px; height: 40px; border-radius: 12px; box-shadow: 0 4px 14px var(--primary-glow); }
-        .lang-switch { display: flex; background: rgba(255,255,255,0.08); border-radius: 10px; padding: 3px; border: 1px solid var(--card-border); }
-        .lang-btn { background: none; border: none; color: var(--text-muted); font-weight: 700; font-size: 13px; padding: 6px 12px; border-radius: 8px; cursor: pointer; transition: all 0.2s; }
+        header { position: sticky; top: 0; z-index: 1000; backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); background: rgba(11, 15, 25, 0.85); border-bottom: 1px solid var(--card-border); }
+        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; padding: 14px 20px; gap: 12px; }
+        .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: white; font-weight: 800; font-size: 20px; }
+        .brand img { width: 36px; height: 36px; border-radius: 10px; box-shadow: 0 4px 14px var(--primary-glow); }
+        
+        .lang-bar { display: flex; flex-wrap: wrap; background: rgba(255,255,255,0.08); border-radius: 12px; padding: 3px; border: 1px solid var(--card-border); gap: 2px; }
+        .lang-btn { background: none; border: none; color: var(--text-muted); font-weight: 700; font-size: 12px; padding: 5px 9px; border-radius: 8px; cursor: pointer; transition: all 0.2s; }
         .lang-btn.active { background: var(--primary); color: white; box-shadow: 0 2px 8px var(--primary-glow); }
 
-        /* Hero Section */
-        .hero { padding: 70px 24px 40px; text-align: center; max-width: 1100px; margin: 0 auto; }
-        .badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(0, 122, 255, 0.12); color: #60a5fa; font-size: 14px; font-weight: 700; padding: 8px 18px; border-radius: 30px; border: 1px solid rgba(0, 122, 255, 0.3); margin-bottom: 24px; box-shadow: 0 0 20px var(--primary-glow); }
-        .hero h1 { font-size: clamp(36px, 6vw, 64px); font-weight: 900; line-height: 1.12; letter-spacing: -1.5px; margin-bottom: 24px; }
-        .hero h1 span.tg { color: var(--telegram); text-shadow: 0 0 30px rgba(34,158,217,0.4); }
-        .hero h1 span.wa { color: var(--whatsapp); text-shadow: 0 0 30px rgba(37,211,102,0.4); }
-        .hero p.subtitle { font-size: clamp(17px, 2.5vw, 21px); color: var(--text-muted); max-width: 760px; margin: 0 auto 40px; font-weight: 400; }
+        /* Hero */
+        .hero { padding: 60px 20px 40px; text-align: center; max-width: 1000px; margin: 0 auto; }
+        .badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(0, 122, 255, 0.12); color: #60a5fa; font-size: 13px; font-weight: 700; padding: 6px 16px; border-radius: 30px; border: 1px solid rgba(0, 122, 255, 0.3); margin-bottom: 20px; box-shadow: 0 0 20px var(--primary-glow); }
+        .hero h1 { font-size: clamp(32px, 5.5vw, 58px); font-weight: 900; line-height: 1.15; letter-spacing: -1.5px; margin-bottom: 20px; }
+        .hero h1 span.tg { color: var(--telegram); }
+        .hero h1 span.wa { color: var(--whatsapp); }
+        .hero p.subtitle { font-size: clamp(16px, 2.2vw, 20px); color: var(--text-muted); max-width: 720px; margin: 0 auto 36px; }
         
-        .cta-box { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; margin-bottom: 50px; }
-        .btn-download { display: inline-flex; align-items: center; gap: 12px; background: linear-gradient(135deg, #007aff, #0056b3); color: white; padding: 18px 36px; border-radius: 18px; font-size: 18px; font-weight: 750; text-decoration: none; box-shadow: 0 12px 30px var(--primary-glow); transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); }
-        .btn-download:hover { transform: translateY(-3px) scale(1.02); box-shadow: 0 18px 40px rgba(0, 122, 255, 0.5); }
-        .btn-github { display: inline-flex; align-items: center; gap: 10px; background: rgba(255,255,255,0.08); color: white; padding: 18px 30px; border-radius: 18px; font-size: 18px; font-weight: 650; text-decoration: none; border: 1px solid var(--card-border); transition: all 0.2s; }
-        .btn-github:hover { background: rgba(255,255,255,0.15); border-color: rgba(255,255,255,0.3); }
+        .cta-box { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-bottom: 40px; }
+        .btn-download { display: inline-flex; align-items: center; gap: 10px; background: linear-gradient(135deg, #007aff, #0056b3); color: white; padding: 16px 32px; border-radius: 16px; font-size: 17px; font-weight: 750; text-decoration: none; box-shadow: 0 10px 25px var(--primary-glow); transition: all 0.2s; }
+        .btn-download:hover { transform: translateY(-2px); box-shadow: 0 16px 36px rgba(0, 122, 255, 0.5); }
+        .btn-github { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.08); color: white; padding: 16px 26px; border-radius: 16px; font-size: 17px; font-weight: 650; text-decoration: none; border: 1px solid var(--card-border); transition: all 0.2s; }
 
-        /* Visual Interactive Phone Showcase */
-        .showcase-wrapper { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 50px; margin: 40px auto 100px; max-width: 1100px; padding: 0 20px; }
+        /* Showcase Mockup */
+        .showcase-wrapper { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 40px; margin: 30px auto 80px; max-width: 1100px; padding: 0 20px; }
+        .phone-frame { width: 320px; height: 640px; background: #000; border-radius: 44px; padding: 10px; box-shadow: 0 25px 60px rgba(0,0,0,0.8), 0 0 0 4px #2a2e3d, 0 0 40px var(--primary-glow); position: relative; }
+        .phone-notch { position: absolute; top: 16px; left: 50%; transform: translateX(-50%); width: 110px; height: 24px; background: #000; border-radius: 14px; z-index: 10; }
+        .phone-screen { width: 100%; height: 100%; background: #0f172a; border-radius: 36px; overflow: hidden; display: flex; flex-direction: column; }
         
-        /* 📱 CSS Phone Mockup */
-        .phone-frame { width: 340px; height: 680px; background: #000; border-radius: 48px; padding: 12px; box-shadow: 0 25px 60px rgba(0,0,0,0.8), 0 0 0 4px #2a2e3d, 0 0 40px var(--primary-glow); position: relative; }
-        .phone-notch { position: absolute; top: 18px; left: 50%; transform: translateX(-50%); width: 120px; height: 26px; background: #000; border-radius: 16px; z-index: 10; }
-        .phone-screen { width: 100%; height: 100%; background: #0f172a; border-radius: 38px; overflow: hidden; display: flex; flex-direction: column; }
-        
-        /* Phone UI Simulation */
-        .app-header { background: #1e293b; padding: 36px 16px 12px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid rgba(255,255,255,0.08); }
-        .app-header h4 { font-size: 16px; font-weight: 800; color: white; display: flex; align-items: center; gap: 8px; }
-        .app-tabs { display: flex; background: #0f172a; padding: 8px 12px; gap: 8px; }
-        .app-tab { flex: 1; text-align: center; padding: 8px; font-size: 12px; font-weight: 700; border-radius: 8px; color: var(--text-muted); background: rgba(255,255,255,0.04); }
+        .app-header { background: #1e293b; padding: 32px 14px 10px; display: flex; align-items: center; justify-content: space-between; }
+        .app-header h4 { font-size: 15px; font-weight: 800; color: white; display: flex; align-items: center; gap: 6px; }
+        .app-tabs { display: flex; background: #0f172a; padding: 6px 10px; gap: 6px; }
+        .app-tab { flex: 1; text-align: center; padding: 6px; font-size: 11px; font-weight: 700; border-radius: 6px; color: var(--text-muted); background: rgba(255,255,255,0.04); }
         .app-tab.active { background: var(--primary); color: white; }
         
-        .app-body { padding: 14px; flex: 1; display: flex; flex-direction: column; gap: 12px; }
-        .input-sim { background: #1e293b; border-radius: 12px; padding: 10px 14px; border: 1px solid var(--card-border); font-size: 12px; color: #94a3b8; display: flex; justify-content: space-between; align-items: center; }
-        .input-btn { background: var(--primary); color: white; padding: 4px 10px; border-radius: 6px; font-size: 11px; font-weight: 700; cursor: pointer; }
+        .app-body { padding: 12px; flex: 1; display: flex; flex-direction: column; gap: 10px; }
+        .input-sim { background: #1e293b; border-radius: 10px; padding: 8px 12px; border: 1px solid var(--card-border); font-size: 11px; color: #94a3b8; display: flex; justify-content: space-between; align-items: center; }
+        .input-btn { background: var(--primary); color: white; padding: 3px 8px; border-radius: 5px; font-size: 10px; font-weight: 700; }
         
-        .pack-preview-card { background: #1e293b; border-radius: 16px; padding: 14px; border: 1px solid rgba(255,255,255,0.08); }
-        .pack-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
-        .pack-name { font-size: 14px; font-weight: 750; color: white; }
-        .pack-chip { background: rgba(37,211,102,0.15); color: var(--whatsapp); font-size: 10px; font-weight: 800; padding: 3px 8px; border-radius: 6px; }
+        .pack-preview-card { background: #1e293b; border-radius: 14px; padding: 12px; border: 1px solid rgba(255,255,255,0.08); }
+        .pack-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+        .pack-name { font-size: 13px; font-weight: 750; color: white; }
+        .pack-chip { background: rgba(37,211,102,0.15); color: var(--whatsapp); font-size: 10px; font-weight: 800; padding: 2px 6px; border-radius: 4px; }
         
-        .stickers-sim-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 12px; }
-        .sim-sticker { aspect-ratio: 1; background: rgba(255,255,255,0.05); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 26px; transition: transform 0.2s; position: relative; }
-        .sim-sticker:hover { transform: scale(1.15); background: rgba(0,122,255,0.2); }
-        .sim-sticker::after { content: '60 FPS'; position: absolute; bottom: 2px; right: 2px; font-size: 6px; font-weight: 800; background: #0284c7; color: white; padding: 1px 3px; border-radius: 3px; }
+        .stickers-sim-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin-bottom: 10px; }
+        .sim-sticker { aspect-ratio: 1; background: rgba(255,255,255,0.05); border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 22px; position: relative; }
+        .sim-sticker::after { content: '60 FPS'; position: absolute; bottom: 2px; right: 2px; font-size: 5px; font-weight: 800; background: #0284c7; color: white; padding: 1px 2px; border-radius: 2px; }
 
-        .btn-wa-sim { background: var(--whatsapp); color: white; border: none; padding: 12px; border-radius: 12px; font-weight: 800; font-size: 13px; width: 100%; display: flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer; box-shadow: 0 4px 14px var(--whatsapp-glow); }
-        
-        /* Side Highlights */
-        .showcase-highlights { flex: 1; min-width: 320px; max-width: 540px; text-align: left; }
-        .showcase-highlights h2 { font-size: 34px; font-weight: 850; letter-spacing: -1px; margin-bottom: 20px; }
-        .highlight-item { display: flex; gap: 16px; margin-bottom: 24px; align-items: flex-start; }
-        .hi-icon { width: 44px; height: 44px; border-radius: 12px; background: rgba(255,255,255,0.06); border: 1px solid var(--card-border); display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0; }
-        .hi-text h4 { font-size: 18px; font-weight: 750; color: white; margin-bottom: 4px; }
+        .btn-wa-sim { background: var(--whatsapp); color: white; border: none; padding: 10px; border-radius: 10px; font-weight: 800; font-size: 12px; width: 100%; display: flex; align-items: center; justify-content: center; gap: 6px; cursor: pointer; }
+
+        .showcase-highlights { flex: 1; min-width: 300px; max-width: 520px; text-align: left; }
+        .showcase-highlights h2 { font-size: 32px; font-weight: 850; margin-bottom: 18px; }
+        .highlight-item { display: flex; gap: 14px; margin-bottom: 20px; align-items: flex-start; }
+        .hi-icon { width: 40px; height: 40px; border-radius: 10px; background: rgba(255,255,255,0.06); border: 1px solid var(--card-border); display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0; }
+        .hi-text h4 { font-size: 17px; font-weight: 750; color: white; margin-bottom: 3px; }
         .hi-text p { font-size: 14px; color: var(--text-muted); line-height: 1.5; }
 
-        /* Step by Step Visuals */
-        .steps-section { padding: 80px 24px; max-width: 1100px; margin: 0 auto; text-align: center; }
-        .steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-top: 48px; text-align: left; }
-        .step-card { background: var(--card-bg); border-radius: 24px; border: 1px solid var(--card-border); padding: 36px 28px; position: relative; overflow: hidden; }
-        .step-num { position: absolute; top: 20px; right: 24px; font-size: 48px; font-weight: 900; color: rgba(255,255,255,0.05); }
-        .step-card h3 { font-size: 20px; font-weight: 800; color: white; margin: 16px 0 10px; }
-        .step-card p { font-size: 15px; color: var(--text-muted); line-height: 1.55; }
+        /* Steps */
+        .steps-section { padding: 60px 20px; max-width: 1100px; margin: 0 auto; text-align: center; }
+        .steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 36px; text-align: left; }
+        .step-card { background: var(--card-bg); border-radius: 20px; border: 1px solid var(--card-border); padding: 30px 24px; position: relative; }
+        .step-num { position: absolute; top: 16px; right: 20px; font-size: 40px; font-weight: 900; color: rgba(255,255,255,0.05); }
 
-        /* Feature Matrix Table */
-        .table-section { padding: 60px 24px; max-width: 900px; margin: 0 auto; }
-        .comp-table { width: 100%; border-collapse: collapse; background: var(--card-bg); border-radius: 20px; overflow: hidden; border: 1px solid var(--card-border); }
-        .comp-table th, .comp-table td { padding: 18px 24px; text-align: left; border-bottom: 1px solid var(--card-border); }
-        .comp-table th { background: rgba(255,255,255,0.05); font-weight: 800; font-size: 16px; color: white; }
-        .comp-table td { font-size: 15px; color: var(--text-muted); }
-        .check-yes { color: var(--whatsapp); font-weight: 800; display: flex; align-items: center; gap: 6px; }
-        .check-no { color: #ef4444; font-weight: 700; }
+        /* Table */
+        .table-section { padding: 50px 20px; max-width: 900px; margin: 0 auto; }
+        .comp-table { width: 100%; border-collapse: collapse; background: var(--card-bg); border-radius: 18px; overflow: hidden; border: 1px solid var(--card-border); }
+        .comp-table th, .comp-table td { padding: 14px 20px; text-align: left; border-bottom: 1px solid var(--card-border); }
+        .comp-table th { background: rgba(255,255,255,0.05); color: white; font-weight: 800; }
+        .check-yes { color: var(--whatsapp); font-weight: 800; }
+        .check-no { color: #ef4444; }
 
-        /* CEO Spotlight */
-        .ceo-card { max-width: 900px; margin: 80px auto; background: linear-gradient(135deg, rgba(0,122,255,0.1), rgba(37,211,102,0.05)); border: 1px solid rgba(0,122,255,0.3); border-radius: 32px; padding: 48px; display: flex; flex-wrap: wrap; align-items: center; gap: 36px; box-shadow: 0 20px 50px rgba(0,0,0,0.4); }
-        .ceo-img { width: 110px; height: 110px; border-radius: 55px; background: linear-gradient(135deg, #007aff, #3b82f6); display: flex; align-items: center; justify-content: center; font-size: 52px; color: white; box-shadow: 0 10px 30px var(--primary-glow); flex-shrink: 0; }
-        .ceo-details h3 { font-size: 26px; font-weight: 850; color: white; margin-bottom: 4px; }
-        .ceo-tag { color: #60a5fa; font-weight: 750; font-size: 14px; margin-bottom: 14px; display: flex; align-items: center; gap: 6px; }
-        .ceo-quote { font-size: 16px; color: #cbd5e1; line-height: 1.6; font-style: italic; }
+        /* CEO */
+        .ceo-card { max-width: 900px; margin: 60px auto; background: linear-gradient(135deg, rgba(0,122,255,0.1), rgba(37,211,102,0.05)); border: 1px solid rgba(0,122,255,0.3); border-radius: 28px; padding: 40px; display: flex; flex-wrap: wrap; align-items: center; gap: 30px; }
+        .ceo-img { width: 90px; height: 90px; border-radius: 45px; background: linear-gradient(135deg, #007aff, #3b82f6); display: flex; align-items: center; justify-content: center; font-size: 44px; color: white; flex-shrink: 0; }
 
         /* Footer */
-        footer { border-top: 1px solid var(--card-border); padding: 60px 24px 30px; text-align: center; background: rgba(0,0,0,0.5); }
-        .footer-links a { color: var(--text-muted); text-decoration: none; margin: 0 14px; font-size: 14px; font-weight: 600; }
-        .footer-links a:hover { color: white; }
+        footer { border-top: 1px solid var(--card-border); padding: 40px 20px 20px; text-align: center; background: rgba(0,0,0,0.5); }
+        .footer-links a { color: var(--text-muted); text-decoration: none; margin: 0 10px; font-size: 13px; }
     </style>
 </head>
 <body>
@@ -168,75 +126,76 @@
     <div class="ambient-glow-1"></div>
     <div class="ambient-glow-2"></div>
 
-    <!-- Navigation -->
     <header>
         <div class="nav-container">
             <a href="#" class="brand">
                 <img src="app_icon.png" alt="TeleStick Logo">
                 <span>TeleStick</span>
             </a>
-            <div style="display:flex; align-items:center; gap:16px;">
-                <div class="lang-switch">
-                    <button class="lang-btn active" onclick="setLanguage('kk')">🇰🇿 KK</button>
-                    <button class="lang-btn" onclick="setLanguage('ru')">🇷🇺 RU</button>
-                    <button class="lang-btn" onclick="setLanguage('en')">🇺🇸 EN</button>
+            <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
+                <div class="lang-bar">
+                    <button class="lang-btn active" onclick="setLang('kk')">🇰🇿 KK</button>
+                    <button class="lang-btn" onclick="setLang('ru')">🇷🇺 RU</button>
+                    <button class="lang-btn" onclick="setLang('en')">🇺🇸 EN</button>
+                    <button class="lang-btn" onclick="setLang('es')">🇪🇸 ES</button>
+                    <button class="lang-btn" onclick="setLang('pt')">🇧🇷 PT</button>
+                    <button class="lang-btn" onclick="setLang('id')">🇮🇩 ID</button>
+                    <button class="lang-btn" onclick="setLang('tr')">🇹🇷 TR</button>
                 </div>
-                <a href="https://github.com/Azamaperdeev05/TeleStick/releases/latest" class="btn-download" style="padding: 10px 20px; font-size: 14px; border-radius: 12px;">
-                    📲 Жүктеу
+                <a href="https://github.com/Azamaperdeev05/TeleStick/releases/latest" class="btn-download" style="padding: 8px 16px; font-size: 13px; border-radius: 10px;">
+                    📲 <span class="t-btn-dl">Жүктеу</span>
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="badge">
-            <span>🔥 Ресми v1.0.0 Шықты</span> • <span>60 FPS WebM & TGS Engine</span>
+            <span class="t-badge">✨ Ресми v1.0.0 • 60 FPS WebM & TGS Engine</span>
         </div>
-        <h1 id="hero-title">
+        <h1 class="t-hero-title">
             <span class="tg">Telegram</span> стикерлерін <br>
             <span class="wa">WhatsApp-қа</span> 1 басылыммен қос!
         </h1>
-        <p class="subtitle" id="hero-sub">
+        <p class="subtitle t-hero-sub">
             Сүйікті видео (.webm) және анимациялық (.tgs) стикерлеріңізді толық кадрлық жиілікпен, сапасын жоғалтпай, автоматты бөлімдерге бөліп WhatsApp-қа бірден экспорттаңыз.
         </p>
 
         <div class="cta-box">
             <a href="https://github.com/Azamaperdeev05/TeleStick/releases/download/v1.0.0/TeleStick-v1.0.0-arm64-v8a.apk" class="btn-download">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
-                Android APK Жүктеу (v1.0.0)
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+                <span class="t-cta-apk">Android APK Жүктеу (v1.0.0)</span>
             </a>
             <a href="https://github.com/Azamaperdeev05/TeleStick" class="btn-github" target="_blank">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-                GitHub Бастапқы коды
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span class="t-cta-gh">GitHub Бастапқы коды</span>
             </a>
         </div>
     </section>
 
-    <!-- Visual Interactive Phone Showcase -->
+    <!-- Phone Showcase -->
     <section class="showcase-wrapper">
-        <!-- Phone Frame -->
         <div class="phone-frame">
             <div class="phone-notch"></div>
             <div class="phone-screen">
                 <div class="app-header">
-                    <h4><img src="app_icon.png" width="22" height="22" style="border-radius:6px;"> TeleStick</h4>
-                    <span style="font-size:11px; background:#0284c7; padding:2px 6px; border-radius:4px; font-weight:800;">PRO</span>
+                    <h4><img src="app_icon.png" width="20" height="20" style="border-radius:5px;"> TeleStick</h4>
+                    <span style="font-size:10px; background:#0284c7; padding:2px 5px; border-radius:4px; font-weight:800;">PRO</span>
                 </div>
                 <div class="app-tabs">
-                    <div class="app-tab active">Импорт</div>
-                    <div class="app-tab">Сақталғандар (3)</div>
+                    <div class="app-tab active t-tab-import">Импорт</div>
+                    <div class="app-tab t-tab-saved">Сақталғандар</div>
                 </div>
                 <div class="app-body">
                     <div class="input-sim">
                         <span>t.me/addstickers/CatVibes</span>
-                        <span class="input-btn">Қою</span>
+                        <span class="input-btn t-btn-paste">Қою</span>
                     </div>
 
                     <div class="pack-preview-card">
                         <div class="pack-top">
-                            <span class="pack-name">🐱 Cat Vibes (1-бөлім)</span>
-                            <span class="pack-chip">28 стикер</span>
+                            <span class="pack-name">🐱 Cat Vibes (1)</span>
+                            <span class="pack-chip">28 stickers</span>
                         </div>
                         <div class="stickers-sim-grid">
                             <div class="sim-sticker">😻</div>
@@ -248,165 +207,468 @@
                             <div class="sim-sticker">❤️</div>
                             <div class="sim-sticker">💎</div>
                         </div>
-                        <button class="btn-wa-sim" onclick="alert('✅ Стикерлер WhatsApp-қа сәтті қосылды!')">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
-                            WhatsApp-қа қосу
+                        <button class="btn-wa-sim" onclick="alert('WhatsApp Success!')">
+                            <span class="t-btn-add-wa">WhatsApp-қа қосу</span>
                         </button>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Side Highlights -->
         <div class="showcase-highlights">
-            <h2>Неліктен TeleStick ең үздік конвертер?</h2>
+            <h2 class="t-hi-title">Неліктен TeleStick ең үздік?</h2>
             <div class="highlight-item">
                 <div class="hi-icon">🎬</div>
                 <div class="hi-text">
-                    <h4>60 FPS Видео және Lottie Стикерлер</h4>
-                    <p>Telegram-ның WebM видеолары мен векторлық TGS анимацияларын мөлдір фонмен, жоғары кадрлық жиілікпен және WhatsApp стандартына сай қысумен түрлендіреді.</p>
+                    <h4 class="t-hi-1-t">60 FPS Видео & Анимация</h4>
+                    <p class="t-hi-1-d">Telegram WebM видеолары мен TGS векторларын жоғары сапада сақтап түрлендіреді.</p>
                 </div>
             </div>
             <div class="highlight-item">
                 <div class="hi-icon">🗂</div>
                 <div class="hi-text">
-                    <h4>Ақылды бөлімдер (Multi-Part Splitting)</h4>
-                    <p>WhatsApp-тың 30 стикерлік шектеуіне байланысты 60-120 стикерлік үлкен пактарды автоматты түрде «1-бөлім», «2-бөлім» қылып реттеп береді.</p>
+                    <h4 class="t-hi-2-t">Ақылды бөлімдер (Multi-Part)</h4>
+                    <p class="t-hi-2-d">30-дан асатын үлкен топтамаларды 1-бөлім, 2-бөлім қылып автоматты түрде реттейді.</p>
                 </div>
             </div>
             <div class="highlight-item">
                 <div class="hi-icon">🔒</div>
                 <div class="hi-text">
-                    <h4>100% Локалды & Қауіпсіз Sandbox</h4>
-                    <p>Барлық өңдеу тек сіздің телефоныңызда орындалады. Ешқандай жеке дерек немесе сурет сыртқы серверлерге жіберілмейді.</p>
+                    <h4 class="t-hi-3-t">100% Қауіпсіз & Локалды</h4>
+                    <p class="t-hi-3-d">Барлық түрлендіру тек телефоныңызда орындалады. Ешқандай серверге дерек кетпейді.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Step by Step Section -->
+    <!-- 3 Steps -->
     <section class="steps-section">
-        <h2 style="font-size:36px; font-weight:850; letter-spacing:-1px;">3 оңай қадамда WhatsApp-қа қос 🚀</h2>
+        <h2 style="font-size:32px; font-weight:850;" class="t-steps-title">3 оңай қадамда қос 🚀</h2>
         <div class="steps-grid">
             <div class="step-card">
                 <div class="step-num">01</div>
-                <div style="font-size:36px;">🔗</div>
-                <h3>Сілтемені көшір</h3>
-                <p>Telegram-нан кез келген стикер топтамасының ресми сілтемесін көшіріп алыңыз (мысалы: <code>t.me/addstickers/pack_name</code>).</p>
+                <div style="font-size:32px;">🔗</div>
+                <h3 class="t-step-1-t">Сілтемені көшір</h3>
+                <p class="t-step-1-d">Telegram-нан кез келген стикерпак сілтемесін көшіріп алыңыз.</p>
             </div>
             <div class="step-card">
                 <div class="step-num">02</div>
-                <div style="font-size:36px;">⚡️</div>
-                <h3>TeleStick-ке қой</h3>
-                <p>Қолданбаны ашып, «Қою» батырмасын басыңыз. Біздің қозғалтқыш стикерлерді 3 секундта автоматты түрде дайындайды.</p>
+                <div style="font-size:32px;">⚡️</div>
+                <h3 class="t-step-2-t">TeleStick-ке қой</h3>
+                <p class="t-step-2-d">Қолданбаны ашып, «Қою» батырмасын басыңыз.</p>
             </div>
             <div class="step-card">
                 <div class="step-num">03</div>
-                <div style="font-size:36px;">💬</div>
-                <h3>WhatsApp-та қолдан</h3>
-                <p>«WhatsApp-қа қосу» батырмасын бір рет басыңыз. Барлық стикерлер бірден сіздің WhatsApp чатыңызда пайда болады!</p>
+                <div style="font-size:32px;">💬</div>
+                <h3 class="t-step-3-t">WhatsApp-қа жібер</h3>
+                <p class="t-step-3-d">«WhatsApp-қа қосу» басып, стикерлерді чатта қолданыңыз!</p>
             </div>
         </div>
     </section>
 
     <!-- Comparison Table -->
     <section class="table-section">
-        <h2 style="text-align:center; font-size:32px; font-weight:850; margin-bottom:30px;">TeleStick vs Басқа құралдар</h2>
+        <h2 style="text-align:center; font-size:28px; font-weight:850; margin-bottom:24px;" class="t-table-title">TeleStick vs Басқалар</h2>
         <table class="comp-table">
             <thead>
                 <tr>
-                    <th>Мүмкіндіктер</th>
+                    <th class="t-th-feature">Мүмкіндік</th>
                     <th style="color:#60a5fa;">🚀 TeleStick</th>
-                    <th>Басқа боттар/сайттар</th>
+                    <th class="t-th-other">Басқалар</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>60 FPS Видео (.webm) қолдауы</td>
-                    <td class="check-yes">✅ Иә (Түпнұсқа сапада)</td>
-                    <td class="check-no">❌ Жоқ немесе қатып қалады</td>
+                    <td class="t-tr-1">60 FPS WebM Video</td>
+                    <td class="check-yes">✅ <span class="t-yes-1">Иә (Full HD)</span></td>
+                    <td class="check-no">❌</td>
                 </tr>
                 <tr>
-                    <td>30-дан асатын пактарды автоматты бөлу</td>
-                    <td class="check-yes">✅ Иә (Multi-Part Engine)</td>
-                    <td class="check-no">❌ Тек алғашқы 30-ын алады</td>
+                    <td class="t-tr-2">Multi-Part Splitting (30+)</td>
+                    <td class="check-yes">✅ <span class="t-yes-2">Автоматты</span></td>
+                    <td class="check-no">❌</td>
                 </tr>
                 <tr>
-                    <td>«Барлық бөлімді қосу» батырмасы</td>
-                    <td class="check-yes">✅ Иә (1 басылыммен)</td>
-                    <td class="check-no">❌ Жоқ</td>
+                    <td class="t-tr-3">100% Local Privacy</td>
+                    <td class="check-yes">✅ <span class="t-yes-3">Телефонда</span></td>
+                    <td class="check-no">❌</td>
                 </tr>
                 <tr>
-                    <td>Құпиялылық және серверсіз өңдеу</td>
-                    <td class="check-yes">✅ 100% Локалды телефонда</td>
-                    <td class="check-no">❌ Бөтен серверге жүктейді</td>
-                </tr>
-                <tr>
-                    <td>Қолданбаның бағасы</td>
-                    <td class="check-yes">🎁 100% Тегін</td>
-                    <td>⚠️ Төлем немесе жарнама көп</td>
+                    <td class="t-tr-4">Бағасы / Price</td>
+                    <td class="check-yes">🎁 <span class="t-yes-4">100% Тегін</span></td>
+                    <td>⚠️</td>
                 </tr>
             </tbody>
         </table>
     </section>
 
-    <!-- CEO Spotlight Section -->
+    <!-- CEO -->
     <section class="ceo-card">
         <div class="ceo-img">👨‍💻</div>
-        <div class="ceo-details">
-            <div class="ceo-tag">🏛️ FOUNDER & LEAD SOFTWARE ARCHITECT</div>
-            <h3>Азамат Пердеев (Azamat Perdeev)</h3>
-            <p class="ceo-quote">
-                «TeleStick-ті жасаудағы басты мақсатым — пайдаланушыларға мессенджерлер арасындағы ешқандай шектеусіз, ең жылдам әрі жоғары сапалы 60 FPS стикер тәжірибесін сыйлау. Біз сапа мен деректердің құпиялылығын бәрінен биік қоямыз.»
+        <div style="flex:1; min-width:260px;">
+            <div style="color:#60a5fa; font-weight:750; font-size:13px; margin-bottom:4px;">FOUNDER & CEO</div>
+            <h3 style="font-size:24px; font-weight:850; color:white;">Азамат Пердеев (Azamat Perdeev)</h3>
+            <p style="font-size:15px; color:#cbd5e1; line-height:1.5; font-style:italic; margin-top:8px;" class="t-ceo-quote">
+                «TeleStick-ті жасаудағы мақсатымыз — сапа мен құпиялылықты бірінші орынға қоя отырып, стикерлерді шекарасыз қолдануға мүмкіндік беру.»
             </p>
-            <div style="margin-top:16px;">
-                <a href="https://github.com/Azamaperdeev05" target="_blank" style="color:#60a5fa; font-weight:700; text-decoration:none; font-size:15px;">
-                    🔗 GitHub Профилі: @Azamaperdeev05 →
+            <div style="margin-top:12px;">
+                <a href="https://github.com/Azamaperdeev05" target="_blank" style="color:#60a5fa; font-weight:700; text-decoration:none; font-size:14px;">
+                    🔗 GitHub: @Azamaperdeev05 →
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
-        <div style="max-width:1000px; margin:0 auto; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:20px; padding-bottom:30px;">
+        <div style="max-width:900px; margin:0 auto; display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:16px; padding-bottom:20px;">
             <div style="text-align:left;">
-                <h4 style="color:white; font-size:18px; font-weight:800;">TeleStick App</h4>
-                <p style="color:var(--text-muted); font-size:13px;">Telegram to WhatsApp 60 FPS Sticker Hub</p>
+                <h4 style="color:white; font-size:16px; font-weight:800;">TeleStick App</h4>
+                <p style="color:var(--text-muted); font-size:12px;">Telegram to WhatsApp 60 FPS Sticker Hub</p>
             </div>
             <div class="footer-links">
-                <a href="privacy-policy.html">Құпиялылық Саясаты</a>
-                <a href="terms-of-service.html">Пайдалану Ережелері</a>
+                <a href="privacy-policy.html" class="t-link-privacy">Құпиялылық Саясаты</a>
+                <a href="terms-of-service.html" class="t-link-terms">Пайдалану Ережелері</a>
                 <a href="https://github.com/Azamaperdeev05/TeleStick" target="_blank">GitHub</a>
             </div>
         </div>
-        <p style="font-size:13px; color:#64748b; margin-top:20px;">
-            © 2026 TeleStick. Әзірлеуші: Azamat Perdeev. Барлық құқықтар қорғалған.
+        <p style="font-size:12px; color:#64748b; margin-top:16px;">
+            © 2026 TeleStick. Azamat Perdeev. 🇰🇿 🇷🇺 🇺🇸 🇪🇸 🇧🇷 🇮🇩 🇹🇷
         </p>
     </footer>
 
-    <!-- Interactive Language Switcher Script -->
+    <!-- 🌐 7-Language Interactive Script -->
     <script>
-        const translations = {
+        const dict = {
             kk: {
+                btnDl: "Жүктеу",
+                badge: "✨ Ресми v1.0.0 • 60 FPS WebM & TGS Engine",
                 heroTitle: '<span class="tg">Telegram</span> стикерлерін <br><span class="wa">WhatsApp-қа</span> 1 басылыммен қос!',
-                heroSub: 'Сүйікті видео (.webm) және анимациялық (.tgs) стикерлеріңізді толық кадрлық жиілікпен, сапасын жоғалтпай, автоматты бөлімдерге бөліп WhatsApp-қа бірден экспорттаңыз.'
+                heroSub: "Сүйікті видео (.webm) және анимациялық (.tgs) стикерлеріңізді толық кадрлық жиілікпен, сапасын жоғалтпай, автоматты бөлімдерге бөліп WhatsApp-қа бірден экспорттаңыз.",
+                ctaApk: "Android APK Жүктеу (v1.0.0)",
+                ctaGh: "GitHub Бастапқы коды",
+                tabImport: "Импорт",
+                tabSaved: "Сақталғандар",
+                btnPaste: "Қою",
+                btnAddWa: "WhatsApp-қа қосу",
+                hiTitle: "Неліктен TeleStick ең үздік?",
+                hi1t: "60 FPS Видео & Анимация",
+                hi1d: "Telegram WebM видеолары мен TGS векторларын жоғары сапада сақтап түрлендіреді.",
+                hi2t: "Ақылды бөлімдер (Multi-Part)",
+                hi2d: "30-дан асатын үлкен топтамаларды 1-бөлім, 2-бөлім қылып автоматты түрде реттейді.",
+                hi3t: "100% Қауіпсіз & Локалды",
+                hi3d: "Барлық түрлендіру тек телефоныңызда орындалады. Ешқандай серверге дерек кетпейді.",
+                stepsTitle: "3 оңай қадамда қос 🚀",
+                step1t: "Сілтемені көшір",
+                step1d: "Telegram-нан кез келген стикерпак сілтемесін көшіріп алыңыз.",
+                step2t: "TeleStick-ке қой",
+                step2d: "Қолданбаны ашып, «Қою» батырмасын басыңыз.",
+                step3t: "WhatsApp-қа жібер",
+                step3d: "«WhatsApp-қа қосу» басып, стикерлерді чатта қолданыңыз!",
+                tableTitle: "TeleStick vs Басқалар",
+                thFeature: "Мүмкіндік",
+                thOther: "Басқалар",
+                tr1: "60 FPS WebM Video",
+                yes1: "Иә (Full HD)",
+                tr2: "Multi-Part Splitting (30+)",
+                yes2: "Автоматты",
+                tr3: "100% Local Privacy",
+                yes3: "Телефонда",
+                tr4: "Бағасы / Price",
+                yes4: "100% Тегін",
+                ceoQuote: "«TeleStick-ті жасаудағы мақсатымыз — сапа мен құпиялылықты бірінші орынға қоя отырып, стикерлерді шекарасыз қолдануға мүмкіндік беру.»",
+                linkPrivacy: "Құпиялылық Саясаты",
+                linkTerms: "Пайдалану Ережелері"
             },
             ru: {
+                btnDl: "Скачать",
+                badge: "✨ Релиз v1.0.0 • 60 FPS WebM & TGS Engine",
                 heroTitle: 'Переноси стикеры из <span class="tg">Telegram</span> <br>в <span class="wa">WhatsApp</span> в 1 клик!',
-                heroSub: 'Переносите любимые видео (.webm) и анимированные (.tgs) стикеры в 60 FPS без потери качества и с умным разделением на части.'
+                heroSub: "Переносите любые видео (.webm) и анимированные (.tgs) стикеры в 60 FPS без потери качества и с умным разделением на части прямо в WhatsApp.",
+                ctaApk: "Скачать Android APK (v1.0.0)",
+                ctaGh: "Исходный код на GitHub",
+                tabImport: "Импорт",
+                tabSaved: "Сохранённые",
+                btnPaste: "Вставить",
+                btnAddWa: "Добавить в WhatsApp",
+                hiTitle: "Почему выбирают TeleStick?",
+                hi1t: "60 FPS Видео и Анимации",
+                hi1d: "Поддержка Telegram WebM видео и векторных TGS с сохранением плавной частоты кадров.",
+                hi2t: "Умное разделение (Multi-Part)",
+                hi2d: "Автоматически разбивает паки больше 30 стикеров на удобные части.",
+                hi3t: "100% Приватность и Локальность",
+                hi3d: "Вся обработка происходит прямо на смартфоне без передачи на серверы.",
+                stepsTitle: "Всего 3 простых шага 🚀",
+                step1t: "Скопируйте ссылку",
+                step1d: "Скопируйте ссылку на набор стикеров в Telegram.",
+                step2t: "Вставьте в TeleStick",
+                step2d: "Откройте приложение и нажмите «Вставить».",
+                step3t: "Добавьте в WhatsApp",
+                step3d: "Нажмите «Добавить в WhatsApp» и используйте в чатах!",
+                tableTitle: "TeleStick против других",
+                thFeature: "Возможность",
+                thOther: "Другие",
+                tr1: "60 FPS WebM Видео",
+                yes1: "Да (Full HD)",
+                tr2: "Разделение на части (30+)",
+                yes2: "Автоматически",
+                tr3: "100% Локальная обработка",
+                yes3: "На телефоне",
+                tr4: "Стоимость",
+                yes4: "100% Бесплатно",
+                ceoQuote: "«Наша цель при создании TeleStick — дать пользователям свободу общения с максимальным качеством и полной конфиденциальностью.»",
+                linkPrivacy: "Политика конфиденциальности",
+                linkTerms: "Условия использования"
             },
             en: {
+                btnDl: "Download",
+                badge: "✨ Official v1.0.0 • 60 FPS WebM & TGS Engine",
                 heroTitle: 'Transfer <span class="tg">Telegram</span> Stickers <br>to <span class="wa">WhatsApp</span> in 1 Tap!',
-                heroSub: 'Convert and export your favorite 60 FPS video (.webm) and animated (.tgs) stickers directly to WhatsApp with zero quality loss and smart multi-part splitting.'
+                heroSub: "Export your favorite video (.webm) and animated (.tgs) stickers directly to WhatsApp with 60 FPS smoothness, zero quality loss, and auto multi-part splitting.",
+                ctaApk: "Download Android APK (v1.0.0)",
+                ctaGh: "GitHub Source Code",
+                tabImport: "Import",
+                tabSaved: "Saved Packs",
+                btnPaste: "Paste",
+                btnAddWa: "Add to WhatsApp",
+                hiTitle: "Why Choose TeleStick?",
+                hi1t: "60 FPS Video & Animations",
+                hi1d: "Flawless WebM video and TGS Lottie animation converter for WhatsApp.",
+                hi2t: "Smart Multi-Part Splitting",
+                hi2d: "Automatically splits packs exceeding WhatsApp's 30-sticker limit into sub-packs.",
+                hi3t: "100% Local & Privacy-First",
+                hi3d: "All conversions run entirely on your device with zero cloud uploads.",
+                stepsTitle: "3 Easy Steps 🚀",
+                step1t: "Copy TG Link",
+                step1d: "Copy any sticker pack link from Telegram.",
+                step2t: "Paste into TeleStick",
+                step2d: "Open TeleStick and hit Paste to fetch.",
+                step3t: "Export to WhatsApp",
+                step3d: "Tap Add to WhatsApp and enjoy stickers with friends!",
+                tableTitle: "TeleStick vs Other Tools",
+                thFeature: "Feature",
+                thOther: "Others",
+                tr1: "60 FPS WebM Video",
+                yes1: "Yes (Full HD)",
+                tr2: "Auto Multi-Part Splitting",
+                yes2: "Automatic",
+                tr3: "100% Local Privacy",
+                yes3: "On-Device",
+                tr4: "Pricing",
+                yes4: "100% Free",
+                ceoQuote: "«Our mission with TeleStick is to give users unrestricted sticker freedom with uncompromised quality and privacy.»",
+                linkPrivacy: "Privacy Policy",
+                linkTerms: "Terms of Service"
+            },
+            es: {
+                btnDl: "Descargar",
+                badge: "✨ Versión v1.0.0 • Motor 60 FPS WebM & TGS",
+                heroTitle: '¡Pasa stickers de <span class="tg">Telegram</span> <br>a <span class="wa">WhatsApp</span> en 1 toque!',
+                heroSub: "Convierte y exporta stickers de video (.webm) y animados (.tgs) a WhatsApp con 60 FPS, sin pérdida de calidad y división automática en partes.",
+                ctaApk: "Descargar Android APK (v1.0.0)",
+                ctaGh: "Código Fuente en GitHub",
+                tabImport: "Importar",
+                tabSaved: "Guardados",
+                btnPaste: "Pegar",
+                btnAddWa: "Añadir a WhatsApp",
+                hiTitle: "¿Por qué elegir TeleStick?",
+                hi1t: "Videos y Animaciones a 60 FPS",
+                hi1d: "Convierte videos WebM y animaciones TGS para WhatsApp manteniendo la fluidez.",
+                hi2t: "División inteligente (Multi-Part)",
+                hi2d: "Divide automáticamente los packs de más de 30 stickers.",
+                hi3t: "100% Local y Privado",
+                hi3d: "Todo el procesamiento se realiza en tu dispositivo sin subir datos a servidores.",
+                stepsTitle: "3 sencillos pasos 🚀",
+                step1t: "Copia el enlace",
+                step1d: "Copia el enlace de cualquier pack en Telegram.",
+                step2t: "Pega en TeleStick",
+                step2d: "Abre la app y presiona Pegar.",
+                step3t: "Añade a WhatsApp",
+                step3d: "¡Toca Añadir a WhatsApp y listo!",
+                tableTitle: "TeleStick vs Otros",
+                thFeature: "Función",
+                thOther: "Otros",
+                tr1: "Video WebM a 60 FPS",
+                yes1: "Sí (Full HD)",
+                tr2: "División automática (30+)",
+                yes2: "Automático",
+                tr3: "Privacidad 100% local",
+                yes3: "En el móvil",
+                tr4: "Precio",
+                yes4: "100% Gratis",
+                ceoQuote: "«Nuestra misión con TeleStick es brindar libertad total de stickers con la máxima calidad y privacidad.»",
+                linkPrivacy: "Política de Privacidad",
+                linkTerms: "Términos de Servicio"
+            },
+            pt: {
+                btnDl: "Baixar",
+                badge: "✨ Versão v1.0.0 • Motor 60 FPS WebM & TGS",
+                heroTitle: 'Transfira figurinhas do <span class="tg">Telegram</span> <br>para o <span class="wa">WhatsApp</span> em 1 toque!',
+                heroSub: "Exporte suas figurinhas de vídeo (.webm) e animadas (.tgs) para o WhatsApp em 60 FPS com divisão automática em partes.",
+                ctaApk: "Baixar APK Android (v1.0.0)",
+                ctaGh: "Código no GitHub",
+                tabImport: "Importar",
+                tabSaved: "Salvos",
+                btnPaste: "Colar",
+                btnAddWa: "Adicionar ao WhatsApp",
+                hiTitle: "Por que escolher o TeleStick?",
+                hi1t: "Vídeos e Animações em 60 FPS",
+                hi1d: "Converte vídeos WebM e animações TGS com qualidade total.",
+                hi2t: "Divisão Inteligente de Pacotes",
+                hi2d: "Divide automaticamente pacotes com mais de 30 figurinhas.",
+                hi3t: "100% Local e Seguro",
+                hi3d: "Processamento direto no seu celular sem envio para a nuvem.",
+                stepsTitle: "3 passos simples 🚀",
+                step1t: "Copie o Link",
+                step1d: "Copie o link do pacote no Telegram.",
+                step2t: "Cole no TeleStick",
+                step2d: "Abra o app e clique em Colar.",
+                step3t: "Adicione ao WhatsApp",
+                step3d: "Toque em Adicionar ao WhatsApp!",
+                tableTitle: "TeleStick vs Outros",
+                thFeature: "Recurso",
+                thOther: "Outros",
+                tr1: "Vídeo WebM 60 FPS",
+                yes1: "Sim (Full HD)",
+                tr2: "Divisão Automática (30+)",
+                yes2: "Automático",
+                tr3: "Privacidade 100% Local",
+                yes3: "No celular",
+                tr4: "Preço",
+                yes4: "100% Grátis",
+                ceoQuote: "«Nossa missão é oferecer liberdade total de figurinhas com máxima qualidade e privacidade.»",
+                linkPrivacy: "Política de Privacidade",
+                linkTerms: "Termos de Uso"
+            },
+            id: {
+                btnDl: "Unduh",
+                badge: "✨ Rilis v1.0.0 • Mesin 60 FPS WebM & TGS",
+                heroTitle: 'Pindahkan Stiker <span class="tg">Telegram</span> <br>ke <span class="wa">WhatsApp</span> dalam 1 Ketukan!',
+                heroSub: "Konversi stiker video (.webm) dan animasi (.tgs) Telegram ke WhatsApp dalam 60 FPS dengan pemisahan paket otomatis.",
+                ctaApk: "Unduh APK Android (v1.0.0)",
+                ctaGh: "Kode Sumber GitHub",
+                tabImport: "Impor",
+                tabSaved: "Tersimpan",
+                btnPaste: "Tempel",
+                btnAddWa: "Tambah ke WhatsApp",
+                hiTitle: "Mengapa Memilih TeleStick?",
+                hi1t: "Video & Animasi 60 FPS",
+                hi1d: "Mendukung video WebM dan animasi TGS kualitas tinggi.",
+                hi2t: "Pemisahan Paket Otomatis",
+                hi2d: "Membagi paket lebih dari 30 stiker secara otomatis.",
+                hi3t: "100% Lokal & Privasi Aman",
+                hi3d: "Semua proses berjalan langsung di perangkat Anda tanpa kirim ke server.",
+                stepsTitle: "3 Langkah Mudah 🚀",
+                step1t: "Salin Tautan",
+                step1d: "Salin tautan stiker pack dari Telegram.",
+                step2t: "Tempel di TeleStick",
+                step2d: "Buka aplikasi lalu tekan Tempel.",
+                step3t: "Ekspor ke WhatsApp",
+                step3d: "Tekan Tambah ke WhatsApp dan nikmati!",
+                tableTitle: "TeleStick vs Lainnya",
+                thFeature: "Fitur",
+                thOther: "Lainnya",
+                tr1: "Video WebM 60 FPS",
+                yes1: "Ya (Full HD)",
+                tr2: "Pemisahan Otomatis (30+)",
+                yes2: "Otomatis",
+                tr3: "Privasi 100% Lokal",
+                yes3: "Di Ponsel",
+                tr4: "Harga",
+                yes4: "100% Gratis",
+                ceoQuote: "«Misi kami adalah memberikan kebebasan stiker dengan kualitas dan privasi terbaik.»",
+                linkPrivacy: "Kebijakan Privasi",
+                linkTerms: "Ketentuan Layanan"
+            },
+            tr: {
+                btnDl: "İndir",
+                badge: "✨ v1.0.0 Resmi Sürüm • 60 FPS WebM & TGS Motoru",
+                heroTitle: '<span class="tg">Telegram</span> Çıkartmalarını <br><span class="wa">WhatsApp\'a</span> Tek Dokunuşla Aktar!',
+                heroSub: "Telegram video (.webm) ve animasyonlu (.tgs) çıkartmalarınızı 60 FPS akıcılıkla, kalite kaybı olmadan WhatsApp'a aktarın.",
+                ctaApk: "Android APK İndir (v1.0.0)",
+                ctaGh: "GitHub Kaynak Kodu",
+                tabImport: "İçe Aktar",
+                tabSaved: "Kaydedilenler",
+                btnPaste: "Yapıştır",
+                btnAddWa: "WhatsApp'a Ekle",
+                hiTitle: "Neden TeleStick?",
+                hi1t: "60 FPS Video ve Animasyon",
+                hi1d: "WebM videolarını ve TGS vektörlerini WhatsApp için pürüzsüz dönüştürür.",
+                hi2t: "Akıllı Paket Bölme (Multi-Part)",
+                hi2d: "30'dan fazla çıkartma içeren paketleri otomatik olarak böler.",
+                hi3t: "100% Yerel ve Güvenli",
+                hi3d: "Tüm işlemler sadece telefonunuzda gerçekleşir, sunucuya veri gitmez.",
+                stepsTitle: "3 Kolay Adım 🚀",
+                step1t: "Bağlantıyı Kopyala",
+                step1d: "Telegram'dan çıkartma paketi bağlantısını kopyalayın.",
+                step2t: "TeleStick'e Yapıştır",
+                step2d: "Uygulamayı açıp Yapıştır düğmesine basın.",
+                step3t: "WhatsApp'a Ekle",
+                step3d: "WhatsApp'a Ekle'ye basarak sohbette kullanın!",
+                tableTitle: "TeleStick vs Diğerleri",
+                thFeature: "Özellik",
+                thOther: "Diğerleri",
+                tr1: "60 FPS WebM Video",
+                yes1: "Evet (Full HD)",
+                tr2: "Otomatik Paket Bölme (30+)",
+                yes2: "Otomatik",
+                tr3: "100% Yerel Gizlilik",
+                yes3: "Cihazda",
+                tr4: "Fiyat",
+                yes4: "100% Ücretsiz",
+                ceoQuote: "«Amacımız kullanıcılara en yüksek kalite ve gizlilikle sınırsız çıkartma özgürlüğü sunmaktır.»",
+                linkPrivacy: "Gizlilik Politikası",
+                linkTerms: "Kullanım Koşulları"
             }
         };
 
-        function setLanguage(lang) {
+        function setLang(lang) {
             document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
             event.target.classList.add('active');
-            document.getElementById('hero-title').innerHTML = translations[lang].heroTitle;
-            document.getElementById('hero-sub').innerText = translations[lang].heroSub;
+            
+            const t = dict[lang] || dict.kk;
+            document.querySelector('.t-btn-dl').innerText = t.btnDl;
+            document.querySelector('.t-badge').innerText = t.badge;
+            document.querySelector('.t-hero-title').innerHTML = t.heroTitle;
+            document.querySelector('.t-hero-sub').innerText = t.heroSub;
+            document.querySelector('.t-cta-apk').innerText = t.ctaApk;
+            document.querySelector('.t-cta-gh').innerText = t.ctaGh;
+            
+            document.querySelector('.t-tab-import').innerText = t.tabImport;
+            document.querySelector('.t-tab-saved').innerText = t.tabSaved;
+            document.querySelector('.t-btn-paste').innerText = t.btnPaste;
+            document.querySelector('.t-btn-add-wa').innerText = t.btnAddWa;
+            
+            document.querySelector('.t-hi-title').innerText = t.hiTitle;
+            document.querySelector('.t-hi-1-t').innerText = t.hi1t;
+            document.querySelector('.t-hi-1-d').innerText = t.hi1d;
+            document.querySelector('.t-hi-2-t').innerText = t.hi2t;
+            document.querySelector('.t-hi-2-d').innerText = t.hi2d;
+            document.querySelector('.t-hi-3-t').innerText = t.hi3t;
+            document.querySelector('.t-hi-3-d').innerText = t.hi3d;
+            
+            document.querySelector('.t-steps-title').innerText = t.stepsTitle;
+            document.querySelector('.t-step-1-t').innerText = t.step1t;
+            document.querySelector('.t-step-1-d').innerText = t.step1d;
+            document.querySelector('.t-step-2-t').innerText = t.step2t;
+            document.querySelector('.t-step-2-d').innerText = t.step2d;
+            document.querySelector('.t-step-3-t').innerText = t.step3t;
+            document.querySelector('.t-step-3-d').innerText = t.step3d;
+            
+            document.querySelector('.t-table-title').innerText = t.tableTitle;
+            document.querySelector('.t-th-feature').innerText = t.thFeature;
+            document.querySelector('.t-th-other').innerText = t.thOther;
+            document.querySelector('.t-tr-1').innerText = t.tr1;
+            document.querySelector('.t-yes-1').innerText = t.yes1;
+            document.querySelector('.t-tr-2').innerText = t.tr2;
+            document.querySelector('.t-yes-2').innerText = t.yes2;
+            document.querySelector('.t-tr-3').innerText = t.tr3;
+            document.querySelector('.t-yes-3').innerText = t.yes3;
+            document.querySelector('.t-tr-4').innerText = t.tr4;
+            document.querySelector('.t-yes-4').innerText = t.yes4;
+            
+            document.querySelector('.t-ceo-quote').innerText = t.ceoQuote;
+            document.querySelector('.t-link-privacy').innerText = t.linkPrivacy;
+            document.querySelector('.t-link-terms').innerText = t.linkTerms;
         }
     </script>
 </body>

@@ -3,45 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - TeleStick</title>
+    <title>Privacy Policy - TeleStick (7 Languages)</title>
+    <link rel="icon" type="image/png" href="app_icon.png">
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #1c1c1e; max-width: 800px; margin: 0 auto; padding: 30px 20px; background-color: #f9f9fb; }
-        .card { background: white; border-radius: 16px; padding: 32px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
-        h1 { color: #007aff; margin-top: 0; font-size: 26px; }
-        h2 { color: #2c3e50; font-size: 18px; margin-top: 24px; border-bottom: 1px solid #eee; padding-bottom: 8px; }
-        p, li { font-size: 15px; color: #48484a; }
-        .footer { text-align: center; margin-top: 30px; font-size: 13px; color: #8e8e93; }
+        :root { --primary: #007aff; --dark: #0f172a; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #1e293b; max-width: 850px; margin: 0 auto; padding: 24px 16px; background-color: #f8fafc; }
+        .card { background: white; border-radius: 20px; padding: 32px; box-shadow: 0 4px 20px rgba(0,0,0,0.04); border: 1px solid #e2e8f0; }
+        .header-bar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 24px; border-bottom: 1px solid #e2e8f0; padding-bottom: 16px; }
+        .lang-bar { display: flex; flex-wrap: wrap; gap: 4px; background: #f1f5f9; padding: 4px; border-radius: 10px; }
+        .lang-btn { background: none; border: none; padding: 6px 10px; border-radius: 6px; font-size: 12px; font-weight: 700; color: #64748b; cursor: pointer; }
+        .lang-btn.active { background: var(--primary); color: white; }
+        h1 { color: var(--primary); font-size: 24px; margin-top: 0; }
+        h2 { color: var(--dark); font-size: 17px; margin-top: 20px; border-bottom: 1px solid #f1f5f9; padding-bottom: 6px; }
+        p, li { font-size: 14px; color: #475569; }
+        ul { padding-left: 20px; margin: 10px 0; }
+        .back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--primary); text-decoration: none; font-weight: 700; font-size: 14px; }
+        .policy-block { display: none; }
+        .policy-block.active { display: block; }
+        .footer { text-align: center; margin-top: 30px; font-size: 12px; color: #94a3b8; }
     </style>
 </head>
 <body>
     <div class="card">
-        <h1>🔒 TeleStick — Құпиялылық Саясаты (Privacy Policy)</h1>
-        <p><strong>Соңғы жаңартылған күні:</strong> 31 тамыз 2026 жыл</p>
+        <div class="header-bar">
+            <a href="index.html" class="back-link">← TeleStick Басты бет</a>
+            <div class="lang-bar">
+                <button class="lang-btn active" onclick="showLang('kk')">🇰🇿 KK</button>
+                <button class="lang-btn" onclick="showLang('ru')">🇷🇺 RU</button>
+                <button class="lang-btn" onclick="showLang('en')">🇺🇸 EN</button>
+                <button class="lang-btn" onclick="showLang('es')">🇪🇸 ES</button>
+                <button class="lang-btn" onclick="showLang('pt')">🇧🇷 PT</button>
+                <button class="lang-btn" onclick="showLang('id')">🇮🇩 ID</button>
+                <button class="lang-btn" onclick="showLang('tr')">🇹🇷 TR</button>
+            </div>
+        </div>
 
-        <h2>1. Жалпы ақпарат</h2>
-        <p>TeleStick қолданбасы пайдаланушылардың жеке деректерінің құпиялылығын құрметтейді және толықтай қорғайды. Біздің басты қағидамыз — <strong>«100% Локалды және Қауіпсіздік»</strong>.</p>
+        <!-- 🇰🇿 Қазақша -->
+        <div id="p-kk" class="policy-block active">
+            <h1>🔒 TeleStick — Құпиялылық Саясаты</h1>
+            <p><strong>Күшіне енген күні:</strong> 31 тамыз 2026 жыл</p>
+            <h2>1. Жалпы қағидалар</h2>
+            <p>TeleStick қолданбасы пайдаланушы құпиялылығын 100% құрметтейді. Біздің басты қағидамыз: <strong>«Барлық өңдеу тек сіздің телефоныңызда орындалады»</strong>.</p>
+            <h2>2. Деректерді жинау</h2>
+            <ul>
+                <li><strong>Жеке мәліметтер:</strong> Біз ешқандай жеке деректерді, хабарламаларды немесе телефон нөмірлерін жинамаймыз.</li>
+                <li><strong>Стикерлер:</strong> Стикерлер тек сіздің құрылғыңызда өңделіп, WhatsApp-қа беріледі. Сыртқы серверлерге жіберілмейді.</li>
+            </ul>
+            <h2>3. Қолданба рұқсаттары</h2>
+            <ul>
+                <li><strong>Интернет (INTERNET):</strong> Telegram ашық API-інен стикер файлдарын тікелей жүктеу үшін қажет.</li>
+            </ul>
+            <h2>4. Байланыс</h2>
+            <p>Сұрақтар бойынша: <strong>azamatperdeev05@gmail.com</strong> (CEO: Azamat Perdeev)</p>
+        </div>
 
-        <h2>2. Деректерді жинау және сақтау</h2>
-        <ul>
-            <li><strong>Жеке мәліметтер:</strong> Біз пайдаланушының аты-жөнін, телефон нөмірін, хабарламаларын немесе жеке файлдарын жинамаймыз және сақтамаймыз.</li>
-            <li><strong>Стикерлерді өңдеу:</strong> Telegram стикерлерін жүктеу және WhatsApp форматына (512x512 WebP) түрлендіру тек пайдаланушының құрылғысында (локальды жадта) орындалады. Ешқандай суреттер немесе видеолар бөгде үшінші серверлерге жіберілмейді.</li>
-            <li><strong>Бот токені:</strong> Егер пайдаланушы өз Telegram бот токенін енгізсе, ол тек құрылғының жергілікті қорғалған жадында (SharedPreferences/Keychain) сақталады.</li>
-        </ul>
+        <!-- 🇷🇺 Русский -->
+        <div id="p-ru" class="policy-block">
+            <h1>🔒 TeleStick — Политика конфиденциальности</h1>
+            <p><strong>Дата вступления в силу:</strong> 31 августа 2026 г.</p>
+            <h2>1. Общие положения</h2>
+            <p>TeleStick гарантирует 100% конфиденциальность. Наш принцип: <strong>«Локальная обработка без передачи данных на сервер»</strong>.</p>
+            <h2>2. Сбор данных</h2>
+            <ul>
+                <li><strong>Личные данные:</strong> Мы не собираем личную информацию, контакты или сообщения.</li>
+                <li><strong>Стикеры:</strong> Все конвертации выполняются локально на вашем смартфоне.</li>
+            </ul>
+            <h2>3. Разрешения</h2>
+            <ul>
+                <li><strong>Интернет (INTERNET):</strong> Используется только для загрузки стикеров из официального API Telegram.</li>
+            </ul>
+            <h2>4. Контакты</h2>
+            <p>Email разработчика: <strong>azamatperdeev05@gmail.com</strong> (CEO: Azamat Perdeev)</p>
+        </div>
 
-        <h2>3. Қолданба рұқсаттары</h2>
-        <ul>
-            <li><strong>Интернетке қол жеткізу (INTERNET):</strong> Telegram ресми ашық API-інен стикер файлдарын жүктеп алу үшін ғана қолданылады.</li>
-            <li><strong>WhatsApp байланысы:</strong> Стикерлерді WhatsApp және WhatsApp Business қолданбаларына ресми ContentProvider/Pasteboard арқылы беру үшін қолданылады.</li>
-        </ul>
+        <!-- 🇺🇸 English -->
+        <div id="p-en" class="policy-block">
+            <h1>🔒 TeleStick — Privacy Policy</h1>
+            <p><strong>Effective Date:</strong> August 31, 2026</p>
+            <h2>1. Overview</h2>
+            <p>TeleStick is committed to protecting your privacy with a strict <strong>100% on-device local processing</strong> architecture.</p>
+            <h2>2. Data Collection</h2>
+            <ul>
+                <li><strong>Personal Data:</strong> Zero collection of personal information, names, phone numbers, or analytics.</li>
+                <li><strong>Sticker Processing:</strong> All video and image conversions run directly on your smartphone.</li>
+            </ul>
+            <h2>3. App Permissions</h2>
+            <ul>
+                <li><strong>INTERNET:</strong> Exclusively used to fetch public sticker assets from Telegram API.</li>
+            </ul>
+            <h2>4. Contact</h2>
+            <p>Contact: <strong>azamatperdeev05@gmail.com</strong> (CEO: Azamat Perdeev)</p>
+        </div>
 
-        <h2>4. Үшінші тараптар</h2>
-        <p>Қолданба ешқандай жарнамалық бақылаушыларды (Ad Trackers) немесе пайдаланушыны аңдитын аналитикалық кодтарды қамтымайды.</p>
+        <!-- 🇪🇸 Español -->
+        <div id="p-es" class="policy-block">
+            <h1>🔒 TeleStick — Política de Privacidad</h1>
+            <p><strong>Fecha de vigencia:</strong> 31 de agosto de 2026</p>
+            <h2>1. Resumen</h2>
+            <p>TeleStick garantiza privacidad total mediante <strong>procesamiento 100% local en el dispositivo</strong>.</p>
+            <h2>2. Recopilación de datos</h2>
+            <ul>
+                <li><strong>Datos personales:</strong> Cero recopilación de datos personales o mensajes.</li>
+                <li><strong>Stickers:</strong> La conversión se realiza en su teléfono sin subir archivos a la nube.</li>
+            </ul>
+            <h2>3. Contacto</h2>
+            <p>Correo: <strong>azamatperdeev05@gmail.com</strong> (CEO: Azamat Perdeev)</p>
+        </div>
 
-        <h2>5. Байланыс</h2>
-        <p>Сұрақтар мен ұсыныстар бойынша GitHub репозиторийі немесе әзірлеуші поштасы арқылы хабарласуға болады: <strong>azamatperdeev05@gmail.com</strong></p>
+        <!-- 🇧🇷 Português -->
+        <div id="p-pt" class="policy-block">
+            <h1>🔒 TeleStick — Política de Privacidade</h1>
+            <p><strong>Data de vigência:</strong> 31 de agosto de 2026</p>
+            <h2>1. Visão Geral</h2>
+            <p>O TeleStick garante total privacidade com <strong>processamento 100% local no seu celular</strong>.</p>
+            <h2>2. Coleta de Dados</h2>
+            <ul>
+                <li><strong>Dados Pessoais:</strong> Não coletamos informações pessoais ou conversas.</li>
+                <li><strong>Figurinhas:</strong> A conversão é feita localmente no aparelho.</li>
+            </ul>
+            <h2>3. Contato</h2>
+            <p>Email: <strong>azamatperdeev05@gmail.com</strong> (CEO: Azamat Perdeev)</p>
+        </div>
+
+        <!-- 🇮🇩 Bahasa Indonesia -->
+        <div id="p-id" class="policy-block">
+            <h1>🔒 TeleStick — Kebijakan Privasi</h1>
+            <p><strong>Tanggal Berlaku:</strong> 31 Agustus 2026</p>
+            <h2>1. Ringkasan</h2>
+            <p>TeleStick berkomitmen menjaga privasi dengan <strong>pemrosesan 100% lokal pada perangkat</strong>.</p>
+            <h2>2. Pengumpulan Data</h2>
+            <ul>
+                <li><strong>Data Pribadi:</strong> Kami tidak mengumpulkan informasi pribadi atau pesan pengguna.</li>
+                <li><strong>Pemrosesan Stiker:</strong> Semua konversi dilakukan langsung di smartphone Anda.</li>
+            </ul>
+            <h2>3. Kontak</h2>
+            <p>Email: <strong>azamatperdeev05@gmail.com</strong> (CEO: Azamat Perdeev)</p>
+        </div>
+
+        <!-- 🇹🇷 Türkçe -->
+        <div id="p-tr" class="policy-block">
+            <h1>🔒 TeleStick — Gizlilik Politikası</h1>
+            <p><strong>Yürürlük Tarihi:</strong> 31 Ağustos 2026</p>
+            <h2>1. Genel Bakış</h2>
+            <p>TeleStick, <strong>%100 cihaz üzerinde yerel işleme</strong> prensibiyle gizliliğinizi korur.</p>
+            <h2>2. Veri Toplama</h2>
+            <ul>
+                <li><strong>Kişisel Veriler:</strong> Hiçbir kişisel veri veya mesaj toplanmaz.</li>
+                <li><strong>Çıkartma İşleme:</strong> Tüm dönüştürme işlemleri telefonunuzda gerçekleşir.</li>
+            </ul>
+            <h2>3. İletişim</h2>
+            <p>E-posta: <strong>azamatperdeev05@gmail.com</strong> (CEO: Azamat Perdeev)</p>
+        </div>
     </div>
+
     <div class="footer">
-        © 2026 TeleStick. Барлық құқықтар қорғалған.
+        © 2026 TeleStick. Azamat Perdeev. 🇰🇿 🇷🇺 🇺🇸 🇪🇸 🇧🇷 🇮🇩 🇹🇷
     </div>
+
+    <script>
+        function showLang(lang) {
+            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            document.querySelectorAll('.policy-block').forEach(el => el.classList.remove('active'));
+            document.getElementById('p-' + lang).classList.add('active');
+        }
+    </script>
 </body>
 </html>
