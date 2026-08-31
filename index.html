@@ -111,17 +111,18 @@
         }
       ]
     }
-    </script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="128x128" href="app_icon_128.png">
 
     <style>
         :root {
             --ios-bg: #f2f2f7;
             --ios-card: rgba(255, 255, 255, 0.85);
             --ios-card-solid: #ffffff;
-            --ios-blue: #007aff;
-            --ios-green: #34c759;
+            --ios-blue: #0066cc;
+            --ios-green: #28a745;
             --ios-text: #1c1c1e;
-            --ios-text-secondary: #8e8e93;
+            --ios-text-secondary: #59595e;
             --ios-border: rgba(60, 60, 67, 0.12);
             --ios-fill: rgba(120, 120, 128, 0.08);
             --ios-shadow: 0 8px 32px rgba(0, 0, 0, 0.04);
@@ -135,8 +136,10 @@
                 --ios-bg: #000000;
                 --ios-card: rgba(28, 28, 30, 0.85);
                 --ios-card-solid: #1c1c1e;
+                --ios-blue: #409cff;
+                --ios-green: #30d158;
                 --ios-text: #ffffff;
-                --ios-text-secondary: #98989d;
+                --ios-text-secondary: #aeaeb2;
                 --ios-border: rgba(255, 255, 255, 0.12);
                 --ios-fill: rgba(255, 255, 255, 0.1);
                 --ios-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
@@ -231,20 +234,21 @@
             </a>
 
             <div class="segmented-control">
-                <button class="seg-btn active" onclick="setLanguage('kk')" aria-label="Қазақ тілі">🇰🇿 ҚАЗ</button>
-                <button class="seg-btn" onclick="setLanguage('ru')" aria-label="Русский язык">🇷🇺 РУС</button>
-                <button class="seg-btn" onclick="setLanguage('en')" aria-label="English">🇺🇸 ENG</button>
-                <button class="seg-btn" onclick="setLanguage('es')" aria-label="Español">🇪🇸 ESP</button>
-                <button class="seg-btn" onclick="setLanguage('pt')" aria-label="Português">🇧🇷 POR</button>
-                <button class="seg-btn" onclick="setLanguage('id')" aria-label="Bahasa Indonesia">🇮🇩 IND</button>
-                <button class="seg-btn" onclick="setLanguage('tr')" aria-label="Türkçe">🇹🇷 TUR</button>
+                <button class="seg-btn active" onclick="setLanguage('kk')">🇰🇿 ҚАЗ</button>
+                <button class="seg-btn" onclick="setLanguage('ru')">🇷🇺 РУС</button>
+                <button class="seg-btn" onclick="setLanguage('en')">🇺🇸 ENG</button>
+                <button class="seg-btn" onclick="setLanguage('es')">🇪🇸 ESP</button>
+                <button class="seg-btn" onclick="setLanguage('pt')">🇧🇷 POR</button>
+                <button class="seg-btn" onclick="setLanguage('id')">🇮🇩 IND</button>
+                <button class="seg-btn" onclick="setLanguage('tr')">🇹🇷 TUR</button>
             </div>
         </div>
     </header>
 
+    <main>
     <!-- Hero Section -->
     <section class="hero">
-        <img src="app_icon_256.png" width="92" height="92" alt="TeleStick App Icon" class="app-icon-hero" loading="eager">
+        <img src="app_icon_256.webp" width="92" height="92" alt="TeleStick App Icon" class="app-icon-hero" loading="eager">
         <br>
         <div class="pill-badge">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
@@ -285,7 +289,7 @@
                         <img src="app_icon_128.png" width="18" height="18" alt="TeleStick Mini Logo" style="border-radius:4px;" loading="lazy">
                         TeleStick
                     </span>
-                    <span style="font-size:10px; background:var(--ios-blue); color:white; padding:1px 5px; border-radius:4px; font-weight:700;">PRO</span>
+                    <span style="font-size:10px; background:#0055b3; color:white; padding:1px 5px; border-radius:4px; font-weight:700;">PRO</span>
                 </div>
                 <div class="ios-content">
                     <div class="ios-input-card">
@@ -326,7 +330,7 @@
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
                     </div>
                     <div>
-                        <h4 style="font-size:16px; font-weight:700; margin-bottom:2px;" class="t-hi-1-t">60 FPS Видео стикерлер</h4>
+                        <h3 style="font-size:16px; font-weight:700; margin-bottom:2px;" class="t-hi-1-t">60 FPS Видео стикерлер</h3>
                         <p style="font-size:13px; color:var(--ios-text-secondary);" class="t-hi-1-d">Telegram WebM видеоларын кадрлық сапасын жоғалтпай бейімдейді.</p>
                     </div>
                 </div>
@@ -336,7 +340,7 @@
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
                     </div>
                     <div>
-                        <h4 style="font-size:16px; font-weight:700; margin-bottom:2px;" class="t-hi-2-t">Ақылды бөлімдер (Multi-Part)</h4>
+                        <h3 style="font-size:16px; font-weight:700; margin-bottom:2px;" class="t-hi-2-t">Ақылды бөлімдер (Multi-Part)</h3>
                         <p style="font-size:13px; color:var(--ios-text-secondary);" class="t-hi-2-d">30-дан асатын үлкен топтамаларды автоматты түрде бөліп береді.</p>
                     </div>
                 </div>
@@ -346,7 +350,7 @@
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
                     </div>
                     <div>
-                        <h4 style="font-size:16px; font-weight:700; margin-bottom:2px;" class="t-hi-3-t">100% Қауіпсіздік</h4>
+                        <h3 style="font-size:16px; font-weight:700; margin-bottom:2px;" class="t-hi-3-t">100% Қауіпсіздік</h3>
                         <p style="font-size:13px; color:var(--ios-text-secondary);" class="t-hi-3-d">Барлық өңдеу тек сіздің телефоныңызда орындалады.</p>
                     </div>
                 </div>
@@ -432,6 +436,7 @@
             </div>
         </div>
     </div>
+    </main>
 
     <!-- Footer -->
     <footer>
