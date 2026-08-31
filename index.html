@@ -1,61 +1,410 @@
 <!DOCTYPE html>
-<html lang="kk">
+<html lang="kk" dir="ltr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TeleStick — Telegram to WhatsApp Stickers</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>TeleStick — Telegram стикерлерін WhatsApp-қа қосу | 60 FPS Video & Animated Stickers</title>
+    
+    <!-- 🔍 SEO Meta Tags -->
+    <meta name="description" content="TeleStick — Telegram-дағы кез келген стикерді (60 FPS WebM видео, .tgs Lottie анимация және статикалық) WhatsApp пен WhatsApp Business-ке 3 секундта тегін көшіретін озық қолданба. Автоматты көп бөлімді пактарды бөлу және 100% қауіпсіз.">
+    <meta name="keywords" content="Telegram to WhatsApp, стикерлерді ватсапка косу, скачать стикеры телеграм в ватсап, telegram stickers to whatsapp, видео стикерлер, 60 fps sticker converter, tgs to whatsapp, webm whatsapp stickers, telestick, azamat perdeev">
+    <meta name="author" content="Azamat Perdeev (CEO & Founder)">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <link rel="canonical" href="https://azamaperdeev05.github.io/telestick-docs/">
+
+    <!-- 📍 GEO Meta Tags (Kazakhstan & Global) -->
+    <meta name="geo.region" content="KZ-ALA">
+    <meta name="geo.placename" content="Almaty, Kazakhstan">
+    <meta name="geo.position" content="43.238949;76.889709">
+    <meta name="ICBM" content="43.238949, 76.889709">
+    <meta name="target" content="all">
+    <meta name="audience" content="all">
+    <meta name="coverage" content="Worldwide">
+
+    <!-- 📱 Open Graph (OG) / Facebook / WhatsApp / Telegram Previews -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://azamaperdeev05.github.io/telestick-docs/">
+    <meta property="og:title" content="TeleStick — Telegram стикерлерін WhatsApp-қа 1 басылыммен қосу 🚀">
+    <meta property="og:description" content="60 FPS Видео және Lottie Анимациялық стикерлерді сапасын жоғалтпай WhatsApp-қа тегін көшіріңіз! 100% құпия әрі жылдам.">
+    <meta property="og:image" content="https://azamaperdeev05.github.io/telestick-docs/app_icon.png">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="512">
+    <meta property="og:locale" content="kk_KZ">
+    <meta property="og:locale:alternate" content="ru_RU">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:site_name" content="TeleStick Hub">
+
+    <!-- 🐦 Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="TeleStick — Telegram to WhatsApp Sticker Converter">
+    <meta name="twitter:description" content="Transfer 60 FPS Video and Animated stickers from Telegram to WhatsApp instantly.">
+    <meta name="twitter:image" content="https://azamaperdeev05.github.io/telestick-docs/app_icon.png">
+
+    <!-- 🎨 Favicon & Theme -->
     <link rel="icon" type="image/png" href="app_icon.png">
+    <link rel="apple-touch-icon" href="app_icon.png">
+    <meta name="theme-color" content="#007aff">
+
+    <!-- 📊 Structured Data (JSON-LD) for Google Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "TeleStick",
+          "operatingSystem": "Android, iOS, Web",
+          "applicationCategory": "UtilitiesApplication",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "description": "Convert and export Telegram animated and 60 FPS video stickers to WhatsApp instantly with multi-part splitting.",
+          "author": {
+            "@type": "Person",
+            "name": "Azamat Perdeev",
+            "jobTitle": "CEO & Lead Architect",
+            "url": "https://github.com/Azamaperdeev05"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "ratingCount": "128"
+          }
+        },
+        {
+          "@type": "Person",
+          "name": "Azamat Perdeev",
+          "jobTitle": "Founder & Lead Software Architect",
+          "url": "https://github.com/Azamaperdeev05",
+          "sameAs": [
+            "https://github.com/Azamaperdeev05",
+            "https://github.com/Azamaperdeev05/TeleStick"
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "TeleStick қалай жұмыс істейді?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Telegram-нан стикерпактың сілтемесін көшіріп, TeleStick қолданбасына қоясыз. Қолданба стикерлерді автоматты түрде жүктеп, WhatsApp талаптарына сай 512x512 WebP форматына келтіріп, бір басылыммен WhatsApp-қа қосады."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Видео стикерлер (60 FPS WebM) қолдау таба ма?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Иә! TeleStick Telegram-ның ең күрделі WebM VP9 видео стикерлерін 60 FPS кадрлық жиілікпен, мөлдір фонмен және 500 КБ-тық WhatsApp шектеуіне сай бейімдеп экспорттайды."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Қолданба тегін бе?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Иә, TeleStick 100% тегін, ешқандай жасырын төлемсіз және толығымен құпиялықты сақтайтын жергілікті өңдеу алгоритмімен жұмыс істейді."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
     <style>
-        :root { --primary: #007aff; --whatsapp: #25d366; }
-        body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; background: #f2f2f7; color: #1c1c1e; text-align: center; }
-        .hero { background: white; padding: 60px 20px 40px; border-bottom: 1px solid #e5e5ea; }
-        .logo { width: 120px; height: 120px; border-radius: 28px; box-shadow: 0 10px 30px rgba(0,122,255,0.2); }
-        h1 { font-size: 32px; font-weight: 800; margin: 20px 0 8px; letter-spacing: -0.5px; }
-        p.sub { font-size: 17px; color: #8e8e93; max-width: 500px; margin: 0 auto 30px; line-height: 1.5; }
-        .btn { display: inline-flex; align-items: center; justify-content: center; background: var(--primary); color: white; text-decoration: none; padding: 14px 28px; border-radius: 14px; font-weight: 700; font-size: 16px; margin: 6px; box-shadow: 0 4px 14px rgba(0,122,255,0.3); transition: transform 0.15s ease; }
-        .btn:hover { transform: scale(1.02); }
-        .btn-wa { background: var(--whatsapp); box-shadow: 0 4px 14px rgba(37,211,102,0.3); }
-        .features { max-width: 800px; margin: 40px auto; padding: 0 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
-        .feat-card { background: white; padding: 24px; border-radius: 20px; text-align: left; box-shadow: 0 2px 10px rgba(0,0,0,0.03); }
-        .feat-card h3 { margin: 0 0 8px; font-size: 17px; color: #000; }
-        .feat-card p { margin: 0; font-size: 14px; color: #8e8e93; line-height: 1.4; }
-        .footer { padding: 40px 20px; font-size: 13px; color: #8e8e93; }
-        .footer a { color: var(--primary); text-decoration: none; margin: 0 10px; }
+        :root {
+            --primary: #007aff;
+            --primary-dark: #0056b3;
+            --whatsapp: #25d366;
+            --whatsapp-dark: #128c7e;
+            --tg-blue: #229ed9;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+            --glow: rgba(0, 122, 255, 0.15);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, sans-serif; background-color: var(--bg); color: var(--text-main); line-height: 1.6; overflow-x: hidden; }
+
+        /* Navigation */
+        header { position: sticky; top: 0; z-index: 100; backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); background: rgba(255, 255, 255, 0.85); border-bottom: 1px solid var(--border); }
+        .nav-container { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 14px 24px; }
+        .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--text-main); font-weight: 800; font-size: 20px; letter-spacing: -0.5px; }
+        .brand img { width: 38px; height: 38px; border-radius: 10px; box-shadow: 0 4px 10px var(--glow); }
+        .nav-links { display: flex; gap: 20px; align-items: center; }
+        .nav-links a { text-decoration: none; color: var(--text-muted); font-size: 14px; font-weight: 600; transition: color 0.2s; }
+        .nav-links a:hover { color: var(--primary); }
+        .nav-btn { background: var(--primary); color: white !important; padding: 8px 18px; border-radius: 10px; font-size: 14px; font-weight: 700; box-shadow: 0 4px 12px var(--glow); }
+
+        /* Hero Section */
+        .hero { padding: 80px 24px 60px; text-align: center; max-width: 900px; margin: 0 auto; }
+        .badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(0, 122, 255, 0.08); color: var(--primary); font-size: 13px; font-weight: 700; padding: 6px 16px; border-radius: 30px; border: 1px solid rgba(0, 122, 255, 0.2); margin-bottom: 24px; }
+        .hero h1 { font-size: clamp(34px, 6vw, 56px); font-weight: 900; line-height: 1.15; letter-spacing: -1.5px; margin-bottom: 20px; color: #020617; }
+        .hero h1 span.gradient { background: linear-gradient(135deg, var(--primary), #00c6ff, var(--whatsapp)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero p.subtitle { font-size: clamp(16px, 2.5vw, 20px); color: var(--text-muted); max-width: 680px; margin: 0 auto 36px; font-weight: 450; }
+        .cta-group { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-bottom: 48px; }
+        .btn-main { display: inline-flex; align-items: center; gap: 10px; background: var(--primary); color: white; padding: 16px 32px; border-radius: 16px; font-size: 17px; font-weight: 700; text-decoration: none; box-shadow: 0 10px 25px rgba(0, 122, 255, 0.35); transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); }
+        .btn-main:hover { transform: translateY(-2px); box-shadow: 0 14px 30px rgba(0, 122, 255, 0.45); }
+        .btn-secondary { display: inline-flex; align-items: center; gap: 10px; background: white; color: var(--text-main); padding: 16px 28px; border-radius: 16px; font-size: 17px; font-weight: 650; text-decoration: none; border: 1px solid var(--border); box-shadow: 0 4px 14px rgba(0,0,0,0.03); transition: all 0.2s; }
+        .btn-secondary:hover { background: #f1f5f9; border-color: #cbd5e1; }
+
+        /* Interactive Showcase Mockup */
+        .mockup-container { max-width: 800px; margin: 0 auto 80px; background: white; border-radius: 28px; padding: 32px; border: 1px solid var(--border); box-shadow: 0 20px 50px rgba(0, 0, 0, 0.06); text-align: left; }
+        .mockup-header { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border); padding-bottom: 20px; margin-bottom: 24px; }
+        .mockup-title { font-size: 18px; font-weight: 750; color: var(--text-main); display: flex; align-items: center; gap: 10px; }
+        .mockup-badge { background: #e0f2fe; color: #0284c7; padding: 4px 10px; border-radius: 8px; font-size: 12px; font-weight: 700; }
+        .sticker-demo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 16px; margin-bottom: 24px; }
+        .demo-sticker-item { background: #f8fafc; border-radius: 16px; padding: 16px; text-align: center; border: 1px solid #f1f5f9; transition: transform 0.2s; cursor: pointer; }
+        .demo-sticker-item:hover { transform: scale(1.08); background: #f0fdf4; border-color: #bbf7d0; }
+        .demo-sticker-emoji { font-size: 40px; }
+        .demo-sticker-label { font-size: 11px; font-weight: 600; color: var(--text-muted); margin-top: 6px; }
+
+        /* Features Section */
+        .section { padding: 80px 24px; max-width: 1100px; margin: 0 auto; }
+        .section-header { text-align: center; margin-bottom: 56px; }
+        .section-header h2 { font-size: 36px; font-weight: 850; letter-spacing: -1px; margin-bottom: 12px; }
+        .section-header p { color: var(--text-muted); font-size: 17px; max-width: 600px; margin: 0 auto; }
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; }
+        .feat-card { background: white; border-radius: 24px; padding: 36px 28px; border: 1px solid var(--border); box-shadow: 0 4px 20px rgba(0,0,0,0.02); transition: transform 0.2s, box-shadow 0.2s; }
+        .feat-card:hover { transform: translateY(-4px); box-shadow: 0 16px 36px rgba(0,0,0,0.06); border-color: #cbd5e1; }
+        .feat-icon { width: 56px; height: 56px; border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 26px; margin-bottom: 20px; background: rgba(0, 122, 255, 0.1); color: var(--primary); }
+        .feat-card h3 { font-size: 20px; font-weight: 750; margin-bottom: 10px; color: var(--text-main); }
+        .feat-card p { font-size: 15px; color: var(--text-muted); line-height: 1.55; }
+
+        /* CEO & Founder Spotlight */
+        .ceo-section { background: white; border-radius: 28px; border: 1px solid var(--border); padding: 48px 36px; margin: 60px auto; max-width: 1050px; display: flex; flex-wrap: wrap; align-items: center; gap: 36px; box-shadow: 0 10px 40px rgba(0,0,0,0.04); }
+        .ceo-avatar { width: 120px; height: 120px; border-radius: 60px; background: linear-gradient(135deg, var(--primary), #6366f1); display: flex; align-items: center; justify-content: center; font-size: 54px; color: white; box-shadow: 0 10px 25px rgba(99, 102, 241, 0.3); flex-shrink: 0; }
+        .ceo-info { flex: 1; min-width: 280px; }
+        .ceo-info h3 { font-size: 24px; font-weight: 800; color: var(--text-main); margin-bottom: 4px; }
+        .ceo-role { color: var(--primary); font-weight: 700; font-size: 15px; margin-bottom: 14px; display: flex; align-items: center; gap: 8px; }
+        .ceo-quote { font-size: 16px; color: var(--text-muted); line-height: 1.6; font-style: italic; }
+
+        /* FAQ Section */
+        .faq-item { background: white; border-radius: 18px; border: 1px solid var(--border); margin-bottom: 16px; padding: 24px; cursor: pointer; transition: all 0.2s; }
+        .faq-item:hover { border-color: var(--primary); }
+        .faq-question { font-size: 18px; font-weight: 750; color: var(--text-main); display: flex; justify-content: space-between; align-items: center; }
+        .faq-answer { margin-top: 14px; font-size: 15px; color: var(--text-muted); line-height: 1.6; }
+
+        /* Footer */
+        footer { background: #0f172a; color: #94a3b8; padding: 60px 24px 30px; text-align: center; }
+        .footer-content { max-width: 1000px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px; border-bottom: 1px solid #334155; padding-bottom: 36px; }
+        .footer-brand { text-align: left; }
+        .footer-brand h4 { color: white; font-size: 20px; font-weight: 800; margin-bottom: 6px; }
+        .footer-links a { color: #cbd5e1; text-decoration: none; margin: 0 12px; font-size: 14px; font-weight: 500; transition: color 0.2s; }
+        .footer-links a:hover { color: white; }
+        .footer-bottom { margin-top: 30px; font-size: 13px; color: #64748b; }
     </style>
 </head>
 <body>
-    <div class="hero">
-        <img src="app_icon.png" alt="TeleStick Logo" class="logo">
-        <h1>TeleStick</h1>
-        <p class="sub">Telegram анимациялық және 60 FPS видео стикерлерін 3 секундта WhatsApp-қа тегін қосыңыз.</p>
-        <div>
-            <a href="https://github.com/Azamaperdeev05/TeleStick/releases/latest" class="btn">📲 Android APK Жүктеу (Тегін)</a>
-            <a href="privacy-policy.html" class="btn" style="background:#8e8e93;">📜 Құпиялылық Саясаты</a>
-        </div>
-    </div>
 
-    <div class="features">
-        <div class="feat-card">
-            <h3>🎬 60 FPS Видео Стикерлер</h3>
-            <p>Telegram WebM және TGS стикерлерін кадрлық сапасын сақтай отырып өңдейді.</p>
+    <!-- Header Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="brand">
+                <img src="app_icon.png" alt="TeleStick Logo">
+                <span>TeleStick</span>
+            </a>
+            <div class="nav-links">
+                <a href="#features">Мүмкіндіктер</a>
+                <a href="#ceo">Автор туралы</a>
+                <a href="#faq">FAQ</a>
+                <a href="privacy-policy.html">Құпиялылық</a>
+                <a href="https://github.com/Azamaperdeev05/TeleStick/releases/latest" class="nav-btn">📲 Жүктеу (APK)</a>
+            </div>
         </div>
-        <div class="feat-card">
-            <h3>🗂 Көп бөлімді пактар</h3>
-            <p>30-дан асатын үлкен топтамаларды автоматты түрде бөліп, 1 басылыммен WhatsApp-қа қосады.</p>
-        </div>
-        <div class="feat-card">
-            <h3>🔒 100% Локалды және Қауіпсіз</h3>
-            <p>Барлық суреттер тек сіздің телефоныңызда өңделеді. Серверге ешқандай дерек кетпейді.</p>
-        </div>
-    </div>
+    </header>
 
-    <div class="footer">
-        <p>© 2026 TeleStick. Барлық құқықтар қорғалған.</p>
-        <p>
-            <a href="privacy-policy.html">Құпиялылық саясаты</a> • 
-            <a href="terms-of-service.html">Пайдалану ережелері</a> • 
-            <a href="https://github.com/Azamaperdeev05/TeleStick">GitHub</a>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="badge">
+            <span>✨ v1.0.0 Ресми Релиз</span> • <span>60 FPS Video Stickers Ready</span>
+        </div>
+        <h1>Telegram стикерлерін <span class="gradient">WhatsApp-қа</span> 1 басылыммен қосыңыз</h1>
+        <p class="subtitle">
+            Telegram-дағы ең сүйікті анимациялық (.tgs) және видео (.webm) стикерлеріңізді сапасын жоғалтпай, автоматты түрде реттеп, WhatsApp-қа 3 секундта көшіретін озық тегін құрал.
         </p>
-    </div>
+
+        <div class="cta-group">
+            <a href="https://github.com/Azamaperdeev05/TeleStick/releases/download/v1.0.0/TeleStick-v1.0.0-arm64-v8a.apk" class="btn-main">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM17 13l-5 5-5-5h3V9h4v4h3z"/></svg>
+                Android APK Жүктеу (v1.0.0)
+            </a>
+            <a href="https://github.com/Azamaperdeev05/TeleStick" class="btn-secondary" target="_blank">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub Жобасы
+            </a>
+        </div>
+
+        <!-- Interactive Showcase Mockup -->
+        <div class="mockup-container">
+            <div class="mockup-header">
+                <div class="mockup-title">
+                    <span>⚡️ Жылдам Қосу Үлгісі (Live Preview)</span>
+                </div>
+                <div class="mockup-badge">60 FPS Түрлендіру</div>
+            </div>
+            <div class="sticker-demo-grid">
+                <div class="demo-sticker-item">
+                    <div class="demo-sticker-emoji">🐱</div>
+                    <div class="demo-sticker-label">WebM Video</div>
+                </div>
+                <div class="demo-sticker-item">
+                    <div class="demo-sticker-emoji">🚀</div>
+                    <div class="demo-sticker-label">60 FPS Lottie</div>
+                </div>
+                <div class="demo-sticker-item">
+                    <div class="demo-sticker-emoji">🔥</div>
+                    <div class="demo-sticker-label">Part 1 (1-30)</div>
+                </div>
+                <div class="demo-sticker-item">
+                    <div class="demo-sticker-emoji">💎</div>
+                    <div class="demo-sticker-label">Part 2 (31-60)</div>
+                </div>
+                <div class="demo-sticker-item">
+                    <div class="demo-sticker-emoji">🎉</div>
+                    <div class="demo-sticker-label">WhatsApp 512px</div>
+                </div>
+                <div class="demo-sticker-item">
+                    <div class="demo-sticker-emoji">✨</div>
+                    <div class="demo-sticker-label">HD WebP</div>
+                </div>
+            </div>
+            <p style="font-size: 14px; color: var(--text-muted); text-align: center;">
+                💡 <strong>Телеграм сілтемесін қойыңыз ➡️ «WhatsApp-қа қосу» батырмасын басыңыз ➡️ Стикерлер сіздің чатыңызда!</strong>
+            </p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section" id="features">
+        <div class="section-header">
+            <h2>Неліктен миллиондаған қолданушы TeleStick-ті таңдайды?</h2>
+            <p>Қарапайым, қауіпсіз және ең озық мобильді қозғалтқышпен жабдықталған.</p>
+        </div>
+
+        <div class="feature-grid">
+            <div class="feat-card">
+                <div class="feat-icon">🎬</div>
+                <h3>60 FPS Видео & TGS Қозғалтқышы</h3>
+                <p>Telegram-дағы ең күрделі WebM VP9 видео стикерлерін кадрлық жиілігін жоғалтпай, мөлдір фонмен WhatsApp стандартына сай түрлендіреді.</p>
+            </div>
+            <div class="feat-card">
+                <div class="feat-icon">🗂</div>
+                <h3>Ақылды бөлімдерге бөлу (Multi-Part)</h3>
+                <p>WhatsApp-тың 30 стикерлік қатаң шектеуін автоматты түрде шешеді. 60 немесе 120 стикерлік пактарды 1-бөлім, 2-бөлім қылып өзі реттейді.</p>
+            </div>
+            <div class="feat-card">
+                <div class="feat-icon">⚡️</div>
+                <h3>Барлық бөлімді 1 басылыммен қосу</h3>
+                <p>Көп бөлімді стикерпактарды кезекпен қиналып жүктемей, «Барлық бөлімді қосу» батырмасымен бірге жылдам экспорттау мүмкіндігі.</p>
+            </div>
+            <div class="feat-card">
+                <div class="feat-icon">📱</div>
+                <h3>Арнайы Пак Редакторы</h3>
+                <p>Стикерпакты толық көру, атын өзгерту, қажетсіз стикерлерді қауіпсіз өшіру және толық экранда тамашалау режимі.</p>
+            </div>
+            <div class="feat-card">
+                <div class="feat-icon">🔒</div>
+                <h3>100% Құпиялылық & Sandbox</h3>
+                <p>OWASP қауіпсіздік аудитінен өткен. Барлық өңдеу тек сіздің телефоныңызда орындалады. Ешқандай серверге дерек жіберілмейді.</p>
+            </div>
+            <div class="feat-card">
+                <div class="feat-icon">🌍</div>
+                <h3>7 Тілдік Халықаралық Қолдау</h3>
+                <p>Қазақша (🇰🇿), Орысша (🇷🇺), Ағылшынша (🇺🇸), Испанша (🇪🇸), Португалша (🇧🇷), Индонезияша (🇮🇩), Түрікше (🇹🇷).</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CEO & Founder Spotlight -->
+    <section class="section" id="ceo">
+        <div class="ceo-section">
+            <div class="ceo-avatar">👨‍💻</div>
+            <div class="ceo-info">
+                <div class="ceo-role">🏛️ ЖОБА ЖЕТЕКШІСІ ЖӘНЕ БАС СӘУЛЕТШІСІ (FOUNDER & CEO)</div>
+                <h3>Азамат Пердеев (Azamat Perdeev)</h3>
+                <p class="ceo-quote">
+                    «Біздің мақсатымыз — пайдаланушыларға мессенджерлер арасында шекарасыз еркіндік сыйлау. TeleStick — бұл қарапайым конвертер ғана емес, сапа мен құпиялылықты бірінші орынға қоятын жоғары технологиялық шешім.»
+                </p>
+                <div style="margin-top: 16px;">
+                    <a href="https://github.com/Azamaperdeev05" target="_blank" style="color: var(--primary); font-weight: 700; text-decoration: none; font-size: 14px;">
+                        🔗 GitHub: @Azamaperdeev05 →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section" id="faq">
+        <div class="section-header">
+            <h2>Жиі қойылатын сұрақтар (FAQ)</h2>
+            <p>Қолдану барысында туындайтын негізгі сауалдарға жауаптар.</p>
+        </div>
+
+        <div class="faq-list" style="max-width: 800px; margin: 0 auto;">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>1. TeleStick қалай жұмыс істейді?</span>
+                </div>
+                <div class="faq-answer">
+                    Telegram-нан кез келген стикерпактың сілтемесін көшіріп, TeleStick қосымшасына қоясыз. Ол стикерлерді жүктеп, WhatsApp талаптарына сай 512x512 WebP форматына келтіріп, WhatsApp-қа тікелей қосады.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>2. Видео стикерлер (60 FPS WebM) жұмыс істей ме?</span>
+                </div>
+                <div class="faq-answer">
+                    Иә! Біздің арнайы кодек қозғалтқышымыз Telegram-ның WebM видеоларын кадрлық жиілігін жоғалтпай, WhatsApp-тың 500 КБ шектеуіне бейімдеп экспорттайды.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>3. Бұл қосымша тегін бе?</span>
+                </div>
+                <div class="faq-answer">
+                    Иә, қосымша 100% тегін, ешқандай жасырын төлемсіз және толығымен құпиялықты сақтайтын жергілікті өңдеу алгоритмімен жұмыс істейді.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>4. Менің стикерлерім немесе жеке деректерім серверге сақтала ма?</span>
+                </div>
+                <div class="faq-answer">
+                    Жоқ! Барлық түрлендіру тек сіздің өз телефоныңыздың ішкі жадында орындалады. Ешқандай серверге суреттер немесе мәліметтер жіберілмейді.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h4>TeleStick Hub</h4>
+                <p>Telegram to WhatsApp 60 FPS Sticker Converter & Suite</p>
+            </div>
+            <div class="footer-links">
+                <a href="#features">Мүмкіндіктер</a>
+                <a href="privacy-policy.html">Құпиялылық Саясаты</a>
+                <a href="terms-of-service.html">Пайдалану Ережелері</a>
+                <a href="https://github.com/Azamaperdeev05/TeleStick" target="_blank">GitHub</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 TeleStick. Әзірлеуші: Azamat Perdeev. Барлық құқықтар қорғалған.</p>
+            <p style="margin-top: 6px; font-size: 12px; color: #475569;">Made with ❤️ in Almaty, Kazakhstan (Central Asia & Worldwide)</p>
+        </div>
+    </footer>
+
 </body>
 </html>

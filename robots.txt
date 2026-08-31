@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://azamaperdeev05.github.io/telestick-docs/sitemap.xml
