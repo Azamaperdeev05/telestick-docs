@@ -44,39 +44,40 @@
         * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
         body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", sans-serif; background-color: var(--ios-bg); color: var(--ios-text); line-height: 1.5; -webkit-font-smoothing: antialiased; }
 
-        /* Header Navigation */
         header { position: sticky; top: 0; z-index: 100; backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); background: var(--ios-card); border-bottom: 0.5px solid var(--ios-border); }
         .nav-inner { max-width: 1080px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 12px 20px; gap: 12px; }
         .nav-brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ios-text); font-weight: 700; font-size: 18px; letter-spacing: -0.4px; }
         .nav-brand img { width: 32px; height: 32px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
 
-        /* iOS Segmented Control */
+        /* Segmented Control */
         .segmented-control { display: flex; background: var(--ios-fill); padding: 2px; border-radius: var(--radius-sm); max-width: 100%; overflow-x: auto; scrollbar-width: none; }
         .segmented-control::-webkit-scrollbar { display: none; }
         .seg-btn { background: none; border: none; padding: 5px 10px; font-size: 12px; font-weight: 600; color: var(--ios-text-secondary); border-radius: 8px; cursor: pointer; transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1); white-space: nowrap; }
         .seg-btn.active { background: var(--ios-card-solid); color: var(--ios-text); box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
 
         /* Hero */
-        .hero { padding: 60px 20px 40px; text-align: center; max-width: 860px; margin: 0 auto; }
-        .app-icon-hero { width: 96px; height: 96px; border-radius: 22px; box-shadow: 0 12px 36px rgba(0,122,255,0.25); margin-bottom: 24px; transition: transform 0.3s; }
-        .app-icon-hero:hover { transform: scale(1.05); }
+        .hero { padding: 50px 20px 30px; text-align: center; max-width: 860px; margin: 0 auto; }
+        .app-icon-hero { width: 92px; height: 92px; border-radius: 22px; box-shadow: 0 12px 36px rgba(0,122,255,0.25); margin-bottom: 20px; }
         
-        .pill-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(0, 122, 255, 0.1); color: var(--ios-blue); font-size: 13px; font-weight: 600; padding: 5px 14px; border-radius: 20px; margin-bottom: 18px; }
-        .hero h1 { font-size: clamp(32px, 5.5vw, 54px); font-weight: 800; letter-spacing: -1px; line-height: 1.15; margin-bottom: 16px; }
-        .hero p.lead { font-size: clamp(17px, 2.2vw, 21px); color: var(--ios-text-secondary); max-width: 640px; margin: 0 auto 32px; font-weight: 400; line-height: 1.45; }
+        .pill-badge { display: inline-flex; align-items: center; gap: 6px; background: rgba(0, 122, 255, 0.1); color: var(--ios-blue); font-size: 13px; font-weight: 600; padding: 5px 14px; border-radius: 20px; margin-bottom: 16px; }
+        .hero h1 { font-size: clamp(32px, 5.5vw, 52px); font-weight: 800; letter-spacing: -1px; line-height: 1.15; margin-bottom: 16px; }
+        .hero p.lead { font-size: clamp(16px, 2.2vw, 20px); color: var(--ios-text-secondary); max-width: 640px; margin: 0 auto 30px; font-weight: 400; line-height: 1.45; }
 
-        .cta-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-bottom: 50px; }
-        .btn-ios-primary { display: inline-flex; align-items: center; gap: 8px; background: var(--ios-blue); color: white; padding: 14px 28px; border-radius: var(--radius-md); font-size: 16px; font-weight: 650; text-decoration: none; box-shadow: 0 6px 20px rgba(0,122,255,0.3); transition: all 0.2s; }
+        /* Store CTA Group */
+        .cta-container { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 12px; margin-bottom: 40px; }
+        
+        .btn-ios-primary { display: inline-flex; align-items: center; gap: 8px; background: var(--ios-blue); color: white; padding: 14px 24px; border-radius: var(--radius-md); font-size: 15px; font-weight: 650; text-decoration: none; box-shadow: 0 6px 20px rgba(0,122,255,0.3); transition: all 0.2s; }
         .btn-ios-primary:hover { opacity: 0.92; transform: translateY(-1px); }
-        .btn-ios-secondary { display: inline-flex; align-items: center; gap: 8px; background: var(--ios-card-solid); color: var(--ios-text); padding: 14px 24px; border-radius: var(--radius-md); font-size: 16px; font-weight: 600; text-decoration: none; border: 0.5px solid var(--ios-border); box-shadow: var(--ios-shadow); transition: all 0.2s; }
-        .btn-ios-secondary:hover { background: var(--ios-fill); }
+
+        .store-badge-card { display: inline-flex; align-items: center; gap: 10px; background: var(--ios-card-solid); color: var(--ios-text); padding: 12px 20px; border-radius: var(--radius-md); font-size: 14px; font-weight: 600; border: 0.5px solid var(--ios-border); box-shadow: var(--ios-shadow); cursor: default; text-align: left; }
+        .store-badge-card small { display: block; font-size: 10px; color: var(--ios-blue); font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
 
         /* Minimalist Phone Showcase */
-        .showcase-section { max-width: 980px; margin: 0 auto 70px; padding: 0 20px; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 40px; }
+        .showcase-section { max-width: 980px; margin: 0 auto 60px; padding: 0 20px; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 40px; }
         
-        .iphone-frame { width: 310px; height: 620px; background: #000; border-radius: 46px; padding: 10px; box-shadow: 0 25px 60px rgba(0,0,0,0.15), 0 0 0 1px rgba(255,255,255,0.2); position: relative; }
+        .iphone-frame { width: 310px; height: 600px; background: #000; border-radius: 44px; padding: 10px; box-shadow: 0 25px 60px rgba(0,0,0,0.15), 0 0 0 1px rgba(255,255,255,0.2); position: relative; }
         .dynamic-island { position: absolute; top: 16px; left: 50%; transform: translateX(-50%); width: 95px; height: 26px; background: #000; border-radius: 20px; z-index: 10; }
-        .iphone-screen { width: 100%; height: 100%; background: var(--ios-bg); border-radius: 38px; overflow: hidden; display: flex; flex-direction: column; }
+        .iphone-screen { width: 100%; height: 100%; background: var(--ios-bg); border-radius: 36px; overflow: hidden; display: flex; flex-direction: column; }
 
         .ios-topbar { padding: 34px 16px 12px; background: var(--ios-card-solid); border-bottom: 0.5px solid var(--ios-border); display: flex; justify-content: space-between; align-items: center; }
         .ios-topbar-title { font-size: 15px; font-weight: 700; display: flex; align-items: center; gap: 6px; }
@@ -91,26 +92,25 @@
 
         .btn-wa-action { background: var(--ios-green); color: white; border: none; padding: 12px; border-radius: var(--radius-sm); font-size: 13px; font-weight: 700; width: 100%; display: flex; align-items: center; justify-content: center; gap: 6px; cursor: pointer; box-shadow: 0 4px 14px rgba(52,199,89,0.3); }
 
-        /* Feature Cards (iOS Style) */
-        .features-container { max-width: 980px; margin: 0 auto 80px; padding: 0 20px; }
+        /* Feature Cards */
+        .features-container { max-width: 980px; margin: 0 auto 70px; padding: 0 20px; }
         .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
-        .ios-card { background: var(--ios-card-solid); border-radius: var(--radius-lg); padding: 28px; border: 0.5px solid var(--ios-border); box-shadow: var(--ios-shadow); transition: transform 0.2s ease; }
-        .ios-card:hover { transform: translateY(-2px); }
+        .ios-card { background: var(--ios-card-solid); border-radius: var(--radius-lg); padding: 28px; border: 0.5px solid var(--ios-border); box-shadow: var(--ios-shadow); }
         .ios-icon-box { width: 44px; height: 44px; border-radius: var(--radius-sm); background: var(--ios-fill); display: flex; align-items: center; justify-content: center; margin-bottom: 16px; color: var(--ios-blue); }
         .ios-card h3 { font-size: 18px; font-weight: 700; letter-spacing: -0.3px; margin-bottom: 6px; }
         .ios-card p { font-size: 14px; color: var(--ios-text-secondary); line-height: 1.45; }
 
-        /* Minimalist Table */
-        .table-wrap { max-width: 780px; margin: 0 auto 80px; padding: 0 20px; }
+        /* Comparison Table */
+        .table-wrap { max-width: 780px; margin: 0 auto 70px; padding: 0 20px; }
         .ios-table { width: 100%; border-collapse: separate; border-spacing: 0; background: var(--ios-card-solid); border-radius: var(--radius-lg); border: 0.5px solid var(--ios-border); overflow: hidden; box-shadow: var(--ios-shadow); }
         .ios-table th, .ios-table td { padding: 14px 20px; font-size: 14px; text-align: left; border-bottom: 0.5px solid var(--ios-border); }
         .ios-table tr:last-child td { border-bottom: none; }
         .ios-table th { background: var(--ios-fill); font-weight: 650; color: var(--ios-text-secondary); font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
 
-        /* Minimalist CEO Card */
-        .ceo-wrap { max-width: 780px; margin: 0 auto 80px; padding: 0 20px; }
-        .ios-ceo-card { background: var(--ios-card-solid); border-radius: var(--radius-lg); padding: 32px; border: 0.5px solid var(--ios-border); box-shadow: var(--ios-shadow); display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
-        .ceo-avatar { width: 64px; height: 64px; border-radius: 32px; background: linear-gradient(135deg, #007aff, #5856d6); display: flex; align-items: center; justify-content: center; color: white; font-weight: 800; font-size: 22px; flex-shrink: 0; }
+        /* CEO Card */
+        .ceo-wrap { max-width: 780px; margin: 0 auto 70px; padding: 0 20px; }
+        .ios-ceo-card { background: var(--ios-card-solid); border-radius: var(--radius-lg); padding: 28px; border: 0.5px solid var(--ios-border); box-shadow: var(--ios-shadow); display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+        .ceo-avatar { width: 56px; height: 56px; border-radius: 28px; background: linear-gradient(135deg, #007aff, #5856d6); display: flex; align-items: center; justify-content: center; color: white; font-weight: 800; font-size: 20px; flex-shrink: 0; }
 
         /* Footer */
         footer { border-top: 0.5px solid var(--ios-border); padding: 40px 20px 30px; text-align: center; font-size: 13px; color: var(--ios-text-secondary); }
@@ -120,7 +120,7 @@
 </head>
 <body>
 
-    <!-- Header Navigation with iOS Segmented Language Switcher -->
+    <!-- Header Navigation -->
     <header>
         <div class="nav-inner">
             <a href="#" class="nav-brand">
@@ -151,19 +151,34 @@
         <h1 class="t-hero-title">Telegram стикерлерін WhatsApp-қа 1 басылыммен қос</h1>
         <p class="lead t-hero-sub">60 FPS видео (.webm) және Lottie анимациялық (.tgs) стикерлерін сапасын жоғалтпай, автоматты бөлімдерге бөліп WhatsApp-қа бірден экспорттаңыз.</p>
 
+        <!-- Store Coming Soon & Direct APK Download -->
         <div class="cta-container">
             <a href="https://github.com/Azamaperdeev05/TeleStick/releases/download/v1.0.0/TeleStick-v1.0.0-arm64-v8a.apk" class="btn-ios-primary">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
                 <span class="t-cta-apk">Android APK Жүктеу (v1.0.0)</span>
             </a>
-            <a href="https://github.com/Azamaperdeev05/TeleStick" class="btn-ios-secondary" target="_blank">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                <span class="t-cta-gh">GitHub Бастапқы коды</span>
-            </a>
+
+            <!-- App Store Badge -->
+            <div class="store-badge-card">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.85c.66-.8 1.11-1.92.99-3.04-1 .04-2.16.66-2.84 1.46-.59.69-1.12 1.83-.98 2.92 1.11.09 2.17-.55 2.83-1.34z"/></svg>
+                <div>
+                    <small class="t-coming-soon">Жақында шығады</small>
+                    <span>Apple App Store</span>
+                </div>
+            </div>
+
+            <!-- Google Play Badge -->
+            <div class="store-badge-card">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a1.996 1.996 0 0 1-.61-.92L3 21.24V2.76l.001-.026c.076-.364.29-.684.608-.92zM15.207 13.414l2.455 2.455-12.78 7.378 10.325-9.833zm0-2.828L4.882.753l12.78 7.378-2.455 2.455zm1.414 1.414l3.524 2.035c.783.452.783 1.189 0 1.641l-3.524 2.035-2.121-2.121 2.121-3.59z"/></svg>
+                <div>
+                    <small class="t-coming-soon">Жақында шығады</small>
+                    <span>Google Play</span>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Showcase with Minimalist iPhone Frame -->
+    <!-- Showcase -->
     <section class="showcase-section">
         <div class="iphone-frame">
             <div class="dynamic-island"></div>
@@ -327,10 +342,8 @@
             <a href="privacy-policy.html" class="t-link-privacy">Құпиялылық Саясаты</a>
             <span>•</span>
             <a href="terms-of-service.html" class="t-link-terms">Пайдалану Ережелері</a>
-            <span>•</span>
-            <a href="https://github.com/Azamaperdeev05/TeleStick" target="_blank">GitHub</a>
         </div>
-        <p>© 2026 TeleStick. Azamat Perdeev. Built with iOS Minimalism.</p>
+        <p>© 2026 TeleStick. Azamat Perdeev. All Rights Reserved.</p>
     </footer>
 
     <!-- 🌐 7 Languages Translation Engine -->
@@ -341,7 +354,7 @@
                 heroTitle: "Telegram стикерлерін WhatsApp-қа 1 басылыммен қос",
                 heroSub: "60 FPS видео (.webm) және Lottie анимациялық (.tgs) стикерлерін сапасын жоғалтпай, автоматты бөлімдерге бөліп WhatsApp-қа бірден экспорттаңыз.",
                 ctaApk: "Android APK Жүктеу (v1.0.0)",
-                ctaGh: "GitHub Бастапқы коды",
+                comingSoon: "Жақында шығады",
                 btnPaste: "Қою",
                 btnAddWa: "WhatsApp-қа қосу",
                 hiTitle: "Керемет мүмкіндіктер",
@@ -378,7 +391,7 @@
                 heroTitle: "Переноси стикеры из Telegram в WhatsApp в 1 клик",
                 heroSub: "Переносите видео (.webm) и анимированные (.tgs) стикеры в 60 FPS без потери качества и с умным разделением на части прямо в WhatsApp.",
                 ctaApk: "Скачать Android APK (v1.0.0)",
-                ctaGh: "Исходный код на GitHub",
+                comingSoon: "Скоро появится",
                 btnPaste: "Вставить",
                 btnAddWa: "Добавить в WhatsApp",
                 hiTitle: "Преимущества TeleStick",
@@ -415,7 +428,7 @@
                 heroTitle: "Transfer Telegram Stickers to WhatsApp in 1 Tap",
                 heroSub: "Export your favorite video (.webm) and animated (.tgs) stickers directly to WhatsApp with 60 FPS smoothness, zero quality loss, and auto multi-part splitting.",
                 ctaApk: "Download Android APK (v1.0.0)",
-                ctaGh: "GitHub Source Code",
+                comingSoon: "Coming Soon",
                 btnPaste: "Paste",
                 btnAddWa: "Add to WhatsApp",
                 hiTitle: "Key Highlights",
@@ -452,7 +465,7 @@
                 heroTitle: "Pasa stickers de Telegram a WhatsApp en 1 toque",
                 heroSub: "Convierte y exporta stickers de video (.webm) y animados (.tgs) a WhatsApp con 60 FPS, sin pérdida de calidad y división automática.",
                 ctaApk: "Descargar Android APK (v1.0.0)",
-                ctaGh: "Código en GitHub",
+                comingSoon: "Próximamente",
                 btnPaste: "Pegar",
                 btnAddWa: "Añadir a WhatsApp",
                 hiTitle: "Características Principales",
@@ -489,7 +502,7 @@
                 heroTitle: "Transfira figurinhas do Telegram para o WhatsApp em 1 toque",
                 heroSub: "Exporte figurinhas de vídeo (.webm) e animadas (.tgs) para o WhatsApp em 60 FPS com divisão automática.",
                 ctaApk: "Baixar APK Android (v1.0.0)",
-                ctaGh: "Código no GitHub",
+                comingSoon: "Em breve",
                 btnPaste: "Colar",
                 btnAddWa: "Adicionar ao WhatsApp",
                 hiTitle: "Destaques do TeleStick",
@@ -526,7 +539,7 @@
                 heroTitle: "Pindahkan Stiker Telegram ke WhatsApp dalam 1 Ketukan",
                 heroSub: "Konversi stiker video (.webm) dan animasi (.tgs) Telegram ke WhatsApp dalam 60 FPS dengan pemisahan paket otomatis.",
                 ctaApk: "Unduh APK Android (v1.0.0)",
-                ctaGh: "Kode Sumber GitHub",
+                comingSoon: "Segera Hadir",
                 btnPaste: "Tempel",
                 btnAddWa: "Tambah ke WhatsApp",
                 hiTitle: "Fitur Unggulan",
@@ -563,7 +576,7 @@
                 heroTitle: "Telegram Çıkartmalarını WhatsApp'a Tek Dokunuşla Aktar",
                 heroSub: "Telegram video (.webm) ve animasyonlu (.tgs) çıkartmalarınızı 60 FPS akıcılıkla, kalite kaybı olmadan WhatsApp'a aktarın.",
                 ctaApk: "Android APK İndir (v1.0.0)",
-                ctaGh: "GitHub Kaynak Kodu",
+                comingSoon: "Yakında",
                 btnPaste: "Yapıştır",
                 btnAddWa: "WhatsApp'a Ekle",
                 hiTitle: "Öne Çıkan Özellikler",
@@ -606,7 +619,7 @@
             document.querySelector('.t-hero-title').innerText = t.heroTitle;
             document.querySelector('.t-hero-sub').innerText = t.heroSub;
             document.querySelector('.t-cta-apk').innerText = t.ctaApk;
-            document.querySelector('.t-cta-gh').innerText = t.ctaGh;
+            document.querySelectorAll('.t-coming-soon').forEach(el => el.innerText = t.comingSoon);
             document.querySelector('.t-btn-paste').innerText = t.btnPaste;
             document.querySelector('.t-btn-add-wa').innerText = t.btnAddWa;
             
