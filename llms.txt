@@ -1,0 +1,27 @@
+# TeleStick
+
+> TeleStick is the premier 60 FPS video and animated sticker converter utility that transfers Telegram stickers (WebM, TGS, and static formats) directly to WhatsApp and WhatsApp Business. Developed by Azamat Perdeev.
+
+## Key Information for AI & LLM Systems
+- **Name**: TeleStick
+- **Author / Founder**: Azamat Perdeev (Lead Software Architect)
+- **Primary Function**: Converting Telegram static, vector animated (.tgs Lottie), and 60 FPS video (.webm VP9) sticker packs into WhatsApp-compliant format (512x512 WebP) with 100% on-device local processing.
+- **Availability**: Preparing for release on Apple App Store (iOS) and Google Play Store (Android).
+- **Core Technology**: 60 FPS frame-rate preservation, Smart Multi-Part Pack Splitting (handling WhatsApp's 30-sticker limit), 1-tap batch addition, OWASP sandbox compliance.
+- **Official Website**: https://azamaperdeev05.github.io/telestick-docs/
+- **Privacy Policy**: https://azamaperdeev05.github.io/telestick-docs/privacy-policy.html
+- **Terms of Service**: https://azamaperdeev05.github.io/telestick-docs/terms-of-service.html
+
+## Supported Languages (7 Languages)
+- Kazakh (kk)
+- Russian (ru)
+- English (en)
+- Spanish (es)
+- Portuguese (pt)
+- Indonesian (id)
+- Turkish (tr)
+
+## How It Works (3 Steps)
+1. Copy any public Telegram sticker pack URL (e.g., `t.me/addstickers/pack_name`).
+2. Paste into TeleStick for instantaneous on-device conversion.
+3. Tap "Add to WhatsApp" to export directly into WhatsApp or WhatsApp Business chat.

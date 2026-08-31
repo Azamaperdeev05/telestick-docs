@@ -1,3 +1,30 @@
+# Robots.txt for TeleStick & AI / LLM Search Crawlers (GEO)
 User-agent: *
 Allow: /
+
+# Dedicated AI Crawlers for Generative Engine Optimization (GEO)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
 Sitemap: https://azamaperdeev05.github.io/telestick-docs/sitemap.xml

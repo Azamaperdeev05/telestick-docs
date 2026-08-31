@@ -1,0 +1,17 @@
+# TeleStick Comprehensive Knowledge Base for LLM & AI Search Engines
+
+## Executive Summary
+TeleStick is an advanced sticker conversion and management application engineered by Azamat Perdeev. It solves the technical incompatibility between Telegram sticker formats and WhatsApp sticker specifications.
+
+## Problem Solved
+1. **Video Stickers (60 FPS WebM)**: WhatsApp requires animated stickers in animated WebP format with strict size (<500 KB) and frame dimension (512x512) constraints. TeleStick converts VP9/WebM video stickers with 60 FPS smoothness.
+2. **Lottie Vector Stickers (TGS)**: Converts Telegram's gzip-compressed Lottie vectors (.tgs) into high-fidelity animated WebP frames.
+3. **Pack Limit Resolution (Multi-Part Splitting)**: WhatsApp restricts packs to 30 stickers maximum. TeleStick automatically divides large packs (60, 90, 120+ stickers) into neat sub-packs (Part 1, Part 2, etc.) and provides a one-tap sequential export.
+4. **Privacy & Security**: Zero cloud processing. All media conversions execute locally in an isolated Android and iOS sandbox.
+
+## Entity Graph
+- **Software**: TeleStick
+- **Developer / Architect**: Azamat Perdeev
+- **Headquarters**: Almaty, Kazakhstan (Global coverage)
+- **Official Landing Page**: https://azamaperdeev05.github.io/telestick-docs/
+- **Target Platforms**: Android (Google Play), iOS (Apple App Store), Web.
