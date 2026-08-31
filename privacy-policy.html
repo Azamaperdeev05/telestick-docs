@@ -2,170 +2,189 @@
 <html lang="kk">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - TeleStick (7 Languages)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Privacy Policy - TeleStick (iOS Minimalist)</title>
     <link rel="icon" type="image/png" href="app_icon.png">
     <style>
-        :root { --primary: #007aff; --dark: #0f172a; }
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #1e293b; max-width: 850px; margin: 0 auto; padding: 24px 16px; background-color: #f8fafc; }
-        .card { background: white; border-radius: 20px; padding: 32px; box-shadow: 0 4px 20px rgba(0,0,0,0.04); border: 1px solid #e2e8f0; }
-        .header-bar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 24px; border-bottom: 1px solid #e2e8f0; padding-bottom: 16px; }
-        .lang-bar { display: flex; flex-wrap: wrap; gap: 4px; background: #f1f5f9; padding: 4px; border-radius: 10px; }
-        .lang-btn { background: none; border: none; padding: 6px 10px; border-radius: 6px; font-size: 12px; font-weight: 700; color: #64748b; cursor: pointer; }
-        .lang-btn.active { background: var(--primary); color: white; }
-        h1 { color: var(--primary); font-size: 24px; margin-top: 0; }
-        h2 { color: var(--dark); font-size: 17px; margin-top: 20px; border-bottom: 1px solid #f1f5f9; padding-bottom: 6px; }
-        p, li { font-size: 14px; color: #475569; }
-        ul { padding-left: 20px; margin: 10px 0; }
-        .back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--primary); text-decoration: none; font-weight: 700; font-size: 14px; }
-        .policy-block { display: none; }
-        .policy-block.active { display: block; }
-        .footer { text-align: center; margin-top: 30px; font-size: 12px; color: #94a3b8; }
+        :root {
+            --ios-bg: #f2f2f7;
+            --ios-card: #ffffff;
+            --ios-blue: #007aff;
+            --ios-text: #1c1c1e;
+            --ios-text-sec: #8e8e93;
+            --ios-border: rgba(60, 60, 67, 0.12);
+            --ios-fill: rgba(120, 120, 128, 0.08);
+            --radius-lg: 20px;
+            --radius-sm: 10px;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --ios-bg: #000000;
+                --ios-card: #1c1c1e;
+                --ios-text: #ffffff;
+                --ios-text-sec: #98989d;
+                --ios-border: rgba(255, 255, 255, 0.12);
+                --ios-fill: rgba(255, 255, 255, 0.1);
+            }
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", sans-serif; background-color: var(--ios-bg); color: var(--ios-text); line-height: 1.5; padding: 24px 16px; -webkit-font-smoothing: antialiased; }
+        
+        .container { max-width: 760px; margin: 0 auto; }
+        .ios-card { background: var(--ios-card); border-radius: var(--radius-lg); padding: 32px; border: 0.5px solid var(--ios-border); box-shadow: 0 8px 30px rgba(0,0,0,0.03); }
+
+        .nav-bar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 0.5px solid var(--ios-border); }
+        .back-btn { display: inline-flex; align-items: center; gap: 6px; color: var(--ios-blue); text-decoration: none; font-weight: 600; font-size: 14px; }
+        
+        .segmented-control { display: flex; background: var(--ios-fill); padding: 2px; border-radius: var(--radius-sm); overflow-x: auto; scrollbar-width: none; }
+        .segmented-control::-webkit-scrollbar { display: none; }
+        .seg-btn { background: none; border: none; padding: 5px 10px; font-size: 12px; font-weight: 600; color: var(--ios-text-sec); border-radius: 8px; cursor: pointer; transition: all 0.2s; white-space: nowrap; }
+        .seg-btn.active { background: var(--ios-card); color: var(--ios-text); box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
+
+        .icon-header { display: flex; align-items: center; gap: 14px; margin-bottom: 20px; }
+        .icon-box { width: 44px; height: 44px; border-radius: 12px; background: rgba(0,122,255,0.1); color: var(--ios-blue); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+        h1 { font-size: 22px; font-weight: 800; letter-spacing: -0.4px; }
+        .date { font-size: 13px; color: var(--ios-text-sec); }
+
+        .content-section { margin-top: 24px; }
+        h2 { font-size: 16px; font-weight: 700; color: var(--ios-text); margin: 20px 0 8px; }
+        p, li { font-size: 14px; color: var(--ios-text-sec); line-height: 1.55; }
+        ul { padding-left: 20px; margin: 8px 0; }
+
+        .policy-pane { display: none; }
+        .policy-pane.active { display: block; }
+        footer { text-align: center; margin-top: 30px; font-size: 12px; color: var(--ios-text-sec); }
     </style>
 </head>
 <body>
-    <div class="card">
-        <div class="header-bar">
-            <a href="index.html" class="back-link">← TeleStick Басты бет</a>
-            <div class="lang-bar">
-                <button class="lang-btn active" onclick="showLang('kk')">🇰🇿 KK</button>
-                <button class="lang-btn" onclick="showLang('ru')">🇷🇺 RU</button>
-                <button class="lang-btn" onclick="showLang('en')">🇺🇸 EN</button>
-                <button class="lang-btn" onclick="showLang('es')">🇪🇸 ES</button>
-                <button class="lang-btn" onclick="showLang('pt')">🇧🇷 PT</button>
-                <button class="lang-btn" onclick="showLang('id')">🇮🇩 ID</button>
-                <button class="lang-btn" onclick="showLang('tr')">🇹🇷 TR</button>
+    <div class="container">
+        <div class="ios-card">
+            <div class="nav-bar">
+                <a href="index.html" class="back-btn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                    TeleStick
+                </a>
+                <div class="segmented-control">
+                    <button class="seg-btn active" onclick="switchLang('kk')">🇰🇿 ҚАЗ</button>
+                    <button class="seg-btn" onclick="switchLang('ru')">🇷🇺 РУС</button>
+                    <button class="seg-btn" onclick="switchLang('en')">🇺🇸 ENG</button>
+                    <button class="seg-btn" onclick="switchLang('es')">🇪🇸 ESP</button>
+                    <button class="seg-btn" onclick="switchLang('pt')">🇧🇷 POR</button>
+                    <button class="seg-btn" onclick="switchLang('id')">🇮🇩 IND</button>
+                    <button class="seg-btn" onclick="switchLang('tr')">🇹🇷 TUR</button>
+                </div>
+            </div>
+
+            <div class="icon-header">
+                <div class="icon-box">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                </div>
+                <div>
+                    <h1 id="policy-title">Құпиялылық Саясаты</h1>
+                    <div class="date">31.08.2026 • Privacy Policy</div>
+                </div>
+            </div>
+
+            <!-- 🇰🇿 Қазақша -->
+            <div id="p-kk" class="policy-pane active">
+                <h2>1. Жалпы қағидалар</h2>
+                <p>TeleStick пайдаланушы құпиялылығын 100% қорғайды. Барлық стикерлерді өңдеу тек сіздің телефоныңызда орындалады.</p>
+                <h2>2. Деректерді жинау</h2>
+                <p>Біз жеке деректерді, хабарламаларды немесе аналитиканы жинамаймыз және сақтамаймыз.</p>
+                <h2>3. Қолданба рұқсаттары</h2>
+                <p><strong>Интернет (INTERNET):</strong> Telegram ашық API-інен стикер файлдарын тікелей жүктеп алу үшін ғана қолданылады.</p>
+                <h2>4. Байланыс</h2>
+                <p>Email: <strong>azamatperdeev05@gmail.com</strong> (CEO: Azamat Perdeev)</p>
+            </div>
+
+            <!-- 🇷🇺 Русский -->
+            <div id="p-ru" class="policy-pane">
+                <h2>1. Общие положения</h2>
+                <p>TeleStick гарантирует 100% конфиденциальность. Вся обработка выполняется локально на смартфоне.</p>
+                <h2>2. Сбор данных</h2>
+                <p>Мы не собираем персональные данные, контакты или сообщения пользователей.</p>
+                <h2>3. Разрешения</h2>
+                <p><strong>Интернет (INTERNET):</strong> Используется только для загрузки стикеров из официального API Telegram.</p>
+                <h2>4. Контакты</h2>
+                <p>Email: <strong>azamatperdeev05@gmail.com</strong> (CEO: Azamat Perdeev)</p>
+            </div>
+
+            <!-- 🇺🇸 English -->
+            <div id="p-en" class="policy-pane">
+                <h2>1. Overview</h2>
+                <p>TeleStick is built on a 100% on-device local processing architecture. Your privacy is strictly protected.</p>
+                <h2>2. Data Collection</h2>
+                <p>Zero collection of personal information, names, phone numbers, or analytics.</p>
+                <h2>3. Permissions</h2>
+                <p><strong>INTERNET:</strong> Exclusively used to fetch public sticker assets from Telegram API.</p>
+                <h2>4. Contact</h2>
+                <p>Email: <strong>azamatperdeev05@gmail.com</strong> (CEO: Azamat Perdeev)</p>
+            </div>
+
+            <!-- 🇪🇸 Español -->
+            <div id="p-es" class="policy-pane">
+                <h2>1. Resumen</h2>
+                <p>TeleStick garantiza privacidad total mediante procesamiento 100% local en su dispositivo.</p>
+                <h2>2. Recopilación de datos</h2>
+                <p>Cero recopilación de información personal o mensajes.</p>
+                <h2>3. Contacto</h2>
+                <p>Email: <strong>azamatperdeev05@gmail.com</strong> (CEO: Azamat Perdeev)</p>
+            </div>
+
+            <!-- 🇧🇷 Português -->
+            <div id="p-pt" class="policy-pane">
+                <h2>1. Visão Geral</h2>
+                <p>O TeleStick garante total privacidade com processamento 100% local no seu smartphone.</p>
+                <h2>2. Coleta de Dados</h2>
+                <p>Não coletamos informações pessoais ou conversas.</p>
+                <h2>3. Contato</h2>
+                <p>Email: <strong>azamatperdeev05@gmail.com</strong> (CEO: Azamat Perdeev)</p>
+            </div>
+
+            <!-- 🇮🇩 Bahasa Indonesia -->
+            <div id="p-id" class="policy-pane">
+                <h2>1. Ringkasan</h2>
+                <p>TeleStick menjaga privasi dengan pemrosesan 100% lokal pada perangkat Anda.</p>
+                <h2>2. Pengumpulan Data</h2>
+                <p>Kami tidak mengumpulkan informasi pribadi atau pesan pengguna.</p>
+                <h2>3. Kontak</h2>
+                <p>Email: <strong>azamatperdeev05@gmail.com</strong> (CEO: Azamat Perdeev)</p>
+            </div>
+
+            <!-- 🇹🇷 Türkçe -->
+            <div id="p-tr" class="policy-pane">
+                <h2>1. Genel Bakış</h2>
+                <p>TeleStick, %100 cihaz üzerinde yerel işleme prensibiyle gizliliğinizi korur.</p>
+                <h2>2. Veri Toplama</h2>
+                <p>Hiçbir kişisel veri veya mesaj toplanmaz.</p>
+                <h2>3. İletişim</h2>
+                <p>E-posta: <strong>azamatperdeev05@gmail.com</strong> (CEO: Azamat Perdeev)</p>
             </div>
         </div>
-
-        <!-- 🇰🇿 Қазақша -->
-        <div id="p-kk" class="policy-block active">
-            <h1>🔒 TeleStick — Құпиялылық Саясаты</h1>
-            <p><strong>Күшіне енген күні:</strong> 31 тамыз 2026 жыл</p>
-            <h2>1. Жалпы қағидалар</h2>
-            <p>TeleStick қолданбасы пайдаланушы құпиялылығын 100% құрметтейді. Біздің басты қағидамыз: <strong>«Барлық өңдеу тек сіздің телефоныңызда орындалады»</strong>.</p>
-            <h2>2. Деректерді жинау</h2>
-            <ul>
-                <li><strong>Жеке мәліметтер:</strong> Біз ешқандай жеке деректерді, хабарламаларды немесе телефон нөмірлерін жинамаймыз.</li>
-                <li><strong>Стикерлер:</strong> Стикерлер тек сіздің құрылғыңызда өңделіп, WhatsApp-қа беріледі. Сыртқы серверлерге жіберілмейді.</li>
-            </ul>
-            <h2>3. Қолданба рұқсаттары</h2>
-            <ul>
-                <li><strong>Интернет (INTERNET):</strong> Telegram ашық API-інен стикер файлдарын тікелей жүктеу үшін қажет.</li>
-            </ul>
-            <h2>4. Байланыс</h2>
-            <p>Сұрақтар бойынша: <strong>azamatperdeev05@gmail.com</strong> (CEO: Azamat Perdeev)</p>
-        </div>
-
-        <!-- 🇷🇺 Русский -->
-        <div id="p-ru" class="policy-block">
-            <h1>🔒 TeleStick — Политика конфиденциальности</h1>
-            <p><strong>Дата вступления в силу:</strong> 31 августа 2026 г.</p>
-            <h2>1. Общие положения</h2>
-            <p>TeleStick гарантирует 100% конфиденциальность. Наш принцип: <strong>«Локальная обработка без передачи данных на сервер»</strong>.</p>
-            <h2>2. Сбор данных</h2>
-            <ul>
-                <li><strong>Личные данные:</strong> Мы не собираем личную информацию, контакты или сообщения.</li>
-                <li><strong>Стикеры:</strong> Все конвертации выполняются локально на вашем смартфоне.</li>
-            </ul>
-            <h2>3. Разрешения</h2>
-            <ul>
-                <li><strong>Интернет (INTERNET):</strong> Используется только для загрузки стикеров из официального API Telegram.</li>
-            </ul>
-            <h2>4. Контакты</h2>
-            <p>Email разработчика: <strong>azamatperdeev05@gmail.com</strong> (CEO: Azamat Perdeev)</p>
-        </div>
-
-        <!-- 🇺🇸 English -->
-        <div id="p-en" class="policy-block">
-            <h1>🔒 TeleStick — Privacy Policy</h1>
-            <p><strong>Effective Date:</strong> August 31, 2026</p>
-            <h2>1. Overview</h2>
-            <p>TeleStick is committed to protecting your privacy with a strict <strong>100% on-device local processing</strong> architecture.</p>
-            <h2>2. Data Collection</h2>
-            <ul>
-                <li><strong>Personal Data:</strong> Zero collection of personal information, names, phone numbers, or analytics.</li>
-                <li><strong>Sticker Processing:</strong> All video and image conversions run directly on your smartphone.</li>
-            </ul>
-            <h2>3. App Permissions</h2>
-            <ul>
-                <li><strong>INTERNET:</strong> Exclusively used to fetch public sticker assets from Telegram API.</li>
-            </ul>
-            <h2>4. Contact</h2>
-            <p>Contact: <strong>azamatperdeev05@gmail.com</strong> (CEO: Azamat Perdeev)</p>
-        </div>
-
-        <!-- 🇪🇸 Español -->
-        <div id="p-es" class="policy-block">
-            <h1>🔒 TeleStick — Política de Privacidad</h1>
-            <p><strong>Fecha de vigencia:</strong> 31 de agosto de 2026</p>
-            <h2>1. Resumen</h2>
-            <p>TeleStick garantiza privacidad total mediante <strong>procesamiento 100% local en el dispositivo</strong>.</p>
-            <h2>2. Recopilación de datos</h2>
-            <ul>
-                <li><strong>Datos personales:</strong> Cero recopilación de datos personales o mensajes.</li>
-                <li><strong>Stickers:</strong> La conversión se realiza en su teléfono sin subir archivos a la nube.</li>
-            </ul>
-            <h2>3. Contacto</h2>
-            <p>Correo: <strong>azamatperdeev05@gmail.com</strong> (CEO: Azamat Perdeev)</p>
-        </div>
-
-        <!-- 🇧🇷 Português -->
-        <div id="p-pt" class="policy-block">
-            <h1>🔒 TeleStick — Política de Privacidade</h1>
-            <p><strong>Data de vigência:</strong> 31 de agosto de 2026</p>
-            <h2>1. Visão Geral</h2>
-            <p>O TeleStick garante total privacidade com <strong>processamento 100% local no seu celular</strong>.</p>
-            <h2>2. Coleta de Dados</h2>
-            <ul>
-                <li><strong>Dados Pessoais:</strong> Não coletamos informações pessoais ou conversas.</li>
-                <li><strong>Figurinhas:</strong> A conversão é feita localmente no aparelho.</li>
-            </ul>
-            <h2>3. Contato</h2>
-            <p>Email: <strong>azamatperdeev05@gmail.com</strong> (CEO: Azamat Perdeev)</p>
-        </div>
-
-        <!-- 🇮🇩 Bahasa Indonesia -->
-        <div id="p-id" class="policy-block">
-            <h1>🔒 TeleStick — Kebijakan Privasi</h1>
-            <p><strong>Tanggal Berlaku:</strong> 31 Agustus 2026</p>
-            <h2>1. Ringkasan</h2>
-            <p>TeleStick berkomitmen menjaga privasi dengan <strong>pemrosesan 100% lokal pada perangkat</strong>.</p>
-            <h2>2. Pengumpulan Data</h2>
-            <ul>
-                <li><strong>Data Pribadi:</strong> Kami tidak mengumpulkan informasi pribadi atau pesan pengguna.</li>
-                <li><strong>Pemrosesan Stiker:</strong> Semua konversi dilakukan langsung di smartphone Anda.</li>
-            </ul>
-            <h2>3. Kontak</h2>
-            <p>Email: <strong>azamatperdeev05@gmail.com</strong> (CEO: Azamat Perdeev)</p>
-        </div>
-
-        <!-- 🇹🇷 Türkçe -->
-        <div id="p-tr" class="policy-block">
-            <h1>🔒 TeleStick — Gizlilik Politikası</h1>
-            <p><strong>Yürürlük Tarihi:</strong> 31 Ağustos 2026</p>
-            <h2>1. Genel Bakış</h2>
-            <p>TeleStick, <strong>%100 cihaz üzerinde yerel işleme</strong> prensibiyle gizliliğinizi korur.</p>
-            <h2>2. Veri Toplama</h2>
-            <ul>
-                <li><strong>Kişisel Veriler:</strong> Hiçbir kişisel veri veya mesaj toplanmaz.</li>
-                <li><strong>Çıkartma İşleme:</strong> Tüm dönüştürme işlemleri telefonunuzda gerçekleşir.</li>
-            </ul>
-            <h2>3. İletişim</h2>
-            <p>E-posta: <strong>azamatperdeev05@gmail.com</strong> (CEO: Azamat Perdeev)</p>
-        </div>
-    </div>
-
-    <div class="footer">
-        © 2026 TeleStick. Azamat Perdeev. 🇰🇿 🇷🇺 🇺🇸 🇪🇸 🇧🇷 🇮🇩 🇹🇷
+        <footer>
+            © 2026 TeleStick. Azamat Perdeev. iOS Human Interface Design.
+        </footer>
     </div>
 
     <script>
-        function showLang(lang) {
-            document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+        const titles = {
+            kk: "Құпиялылық Саясаты",
+            ru: "Политика конфиденциальности",
+            en: "Privacy Policy",
+            es: "Política de Privacidad",
+            pt: "Política de Privacidade",
+            id: "Kebijakan Privasi",
+            tr: "Gizlilik Politikası"
+        };
+
+        function switchLang(lang) {
+            document.querySelectorAll('.seg-btn').forEach(b => b.classList.remove('active'));
             event.target.classList.add('active');
-            document.querySelectorAll('.policy-block').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.policy-pane').forEach(p => p.classList.remove('active'));
             document.getElementById('p-' + lang).classList.add('active');
+            document.getElementById('policy-title').innerText = titles[lang] || titles.kk;
         }
     </script>
 </body>
